@@ -1,0 +1,36 @@
+.wrapBTN--center{
+    display: flex;
+}
+.wrapBTN--SB{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapAppartament{
+    border: 1px solid #9999998c;
+    border: 1px solid #9999998c;
+    padding: 10px;
+    margin: 5px 0;
+    footer{
+        width: 100%;
+        >p{
+            max-width: 300px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+.wrapAppartament-img{
+    display: flex;
+}
+.wrapAppartament-btnGrop{
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: space-between;
+}
+.wrapTabs{
+    margin: -35px 0 0 0;
+    .nav-tabs{
+        justify-content: flex-end;
+    }
+}

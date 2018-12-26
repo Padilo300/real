@@ -1,0 +1,39 @@
+.btn-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: #828282;
+    cursor: pointer;
+    &:hover{
+        color: #2D9CDB;
+    }
+    i{
+        margin: 0 10px 0 0;
+    }
+}
+
+.select-normal{
+    max-width: 180px;
+    font-size: 11px;
+}
+.selctPrice{
+    background: none;
+    border: none;
+    color: $colorGray;
+    cursor: pointer;
+    font-weight: 700;
+}
+.selctPrice--active{
+    color: #fff;
+    background: #4f4f4fab;
+    border-radius: 6px;
+    font-weight: 700;
+    line-height: 15px;
+}
+
+.INS-breadcrumb{
+    margin: 0;
+    padding: 4px 0;
+}

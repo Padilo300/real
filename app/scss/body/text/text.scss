@@ -1,0 +1,40 @@
+.wrapAppartParametr{
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    color: $colorGray;
+    
+}
+.titleAppart{
+    color: $colorGray;
+}
+.descriptionAppart{
+    line-height: 18px;
+    max-width: 500px;
+    margin: 0 0 30px 0;
+
+}
+.appartPrice{
+    text-align: right;
+    color: $colorGray;
+    *{
+        color: $colorGray;
+    }
+    >span{
+        display: block;
+        font-size: 1.1rem;
+    }
+}
+.pagination *{
+    font-size: 1.5rem;
+}
+.price--red{
+    color: $colorRed;
+    line-height: 25px;
+    font-size: 24px;
+    .priceM2{
+        color: $colorGray;
+        margin: 5px 0 10px 0;
+    }
+    margin: 0;
+}   
