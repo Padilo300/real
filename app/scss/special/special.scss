@@ -27,7 +27,7 @@ body::-webkit-scrollbar-thumb {
 }
 .absolute-bottom{
     position: absolute;
-    bottom: 0;
+    bottom: -15px;
 }
 
 /* ===========  спрайты  ================  */
@@ -71,4 +71,19 @@ body::-webkit-scrollbar-thumb {
     width: 17px;
     height: 17px;
     background-position: -58px -29px;
+}
+.noBorder{
+    border: none !important; 
+    *{
+        border: none !important; 
+    }
+}
+.w-100{
+    width: 100%;
+}
+.w-50{
+    max-width: 49%;
+}
+.w-70{
+    max-width: 70%;
 }

@@ -1,0 +1,43 @@
+
+.select-normal{
+    max-width: 180px;
+    font-size: 11px;
+}
+.select-xs{
+    max-width: 100px;
+    font-size: 11px;
+}
+
+.selctPrice{
+    background: none;
+    border: none;
+    color: $colorGray;
+    cursor: pointer;
+    font-weight: 700;
+}
+.selctPrice--active{
+    color: #fff;
+    background: #4f4f4fab;
+    border-radius: 6px;
+    font-weight: 700;
+    line-height: 15px;
+}
+.formFilter{
+    .formFilter-row1{
+        margin:10px 0;
+        >label.active{
+            background: #545b62 !important;
+            color: #fff !important;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+    }
+    .formFilter-row{
+        margin: 10px 0;
+    }
+    label{
+        font-weight: 700;
+        color: #545b62;
+        font-size: 12px;
+    }
+}

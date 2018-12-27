@@ -5,6 +5,10 @@
     display: flex;
     justify-content: space-between;
 }
+.wrapBTN--fend{
+    display: flex;
+    justify-content: flex-end;
+}
 .wrapAppartament{
     border: 1px solid #9999998c;
     border: 1px solid #9999998c;
@@ -32,5 +36,27 @@
     margin: -35px 0 0 0;
     .nav-tabs{
         justify-content: flex-end;
+    }
+}
+.wrap{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sliderWrap{
+    padding: 0 0 30px 0;
+    border-bottom: 1px solid #a5a5a5;
+}
+.wrapInputBtn{
+    input[type=number]{
+        padding: 0 0 0 10px;
+        font-size: 15px;
+    }
+}
+.wrapMap{
+    width: 100%;
+    min-height: 600px;
+    iframe{
+        width: 100%;
+        min-height: 600px;
     }
 }
