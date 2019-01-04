@@ -23,3 +23,137 @@
         }
     }
 }
+.table-main-page{
+    max-width: 370px;
+    table-layout: fixed;
+    color: #55595C;
+    font-weight: 500;
+    border-color: #9898981a;
+    box-shadow: 0 4px 23px #E4E6E9;    
+    margin: 10px 0;
+    transition: all 0.3s;
+    &:hover{
+        box-shadow: 0 0  10px #E4E6E9;
+        
+    }
+    thead{
+        tr{
+            td{
+                border: none;
+            }
+        }
+    }
+    td{
+        font-size: 14px;
+    }
+}
+.tableObject{
+    max-width: 880px;
+    table-layout: fixed;
+    font-size: 12px;
+    text-align: center;
+    color: #4F4F4F;
+    thead{
+        tr{
+            th{
+                padding-left: 0;
+                padding-right: 0;
+                font-weight: 400;
+                border-bottom: 0;
+
+                &:nth-child(1){// #
+                    width: 20px;
+                }   
+                &:nth-child(2){ // menu
+                    width: 20px;
+                    a{
+                        display: block;
+                        text-align: center;
+                        margin: 0 0 3px 0;
+                        i{
+                            margin: 0 auto;
+                        }
+                    }
+                }   
+                &:nth-child(3){ // рез
+                    width: 31px;
+                }   
+                &:nth-child(4){ // Обьект
+                    width: 77px;
+                }   
+                &:nth-child(5){ // Запрос
+                    width: 218px;
+                }   
+                &:nth-child(6){ // площадь 
+                    width: 77px;
+                }   
+                &:nth-child(7){ // Этаж
+                    width: 48;
+                }   
+                &:nth-child(8){ // Комнат
+                    width: 45px;
+                }   
+                &:nth-child(9){ // Бюджет
+                    width: 103px;
+                }   
+                &:nth-child(10){ // Расположение
+                    width: 103px;
+                }   
+                &:nth-child(11){ // Отвецтвенный
+                    width: 130px;
+                }   
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+                font-size: 10px;
+                padding-left: 0;
+                padding-right: 0;
+                *{
+                    font-size: 10px;
+                }
+                &:nth-child(1){ // номер
+
+                }
+                &:nth-child(2){ // меню
+                    
+                }
+                &:nth-child(3){ //  Рез
+                    
+                }
+                &:nth-child(4){ // обьект 
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+                &:nth-child(5){ // Запрос  
+                    text-align: left;
+                }
+                &:nth-child(6){ // Площадь  
+                    
+                }
+                &:nth-child(7){ // Этаж 
+                    
+                }
+                &:nth-child(8){ // Комнат 
+                    
+                }
+                &:nth-child(9){ // Бюджет 
+                    
+                }
+                &:nth-child(10){ // Располжение 
+                    
+                }
+                &:nth-child(11){ // Отвецвтенный
+                    a{
+                        text-decoration: underline;
+                    }
+                    span{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

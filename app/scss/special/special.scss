@@ -28,6 +28,10 @@ body::-webkit-scrollbar-thumb {
 .absolute-bottom{
     position: absolute;
     bottom: -15px;
+    left: 20px;
+    @media screen and (min-width: 767px){
+        left: 27%;
+    }
 }
 
 /* ===========  спрайты  ================  */
@@ -86,4 +90,25 @@ body::-webkit-scrollbar-thumb {
 }
 .w-70{
     max-width: 70%;
+}
+.margin-none{
+    margin: 0 0 0 0 !important;
+}
+.max-cont{
+    width: max-content !important;
+}
+.space-5px{
+    height: 5px;
+    display: block;
+}
+.space-10px{
+    height: 10px;
+    display: block;
+}
+.space-15px{
+    height: 15px;
+    display: block;
+}
+.heigh100vh{
+    min-height: 80vh;
 }

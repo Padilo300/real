@@ -1,0 +1,93 @@
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px 2px rgba(0,0,0,0.3); /*цвет*/
+    background:none; /*фон у вас не будет фоновой цвета потому что он на none изменяем его на любой цветом*/
+        opacity:.7;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;	
+  background: none; 
+ -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+/* ============  отступы margin  ============ */
+
+.m010px{
+    margin: 0 10px;
+}
+.m03px{
+    margin: 0 3px;
+}
+.bg-none{
+    background: none;
+}
+.absolute-bottom{
+    position: absolute;
+    bottom: -15px;
+    left: 20px;
+    @media screen and (min-width: 767px){
+        left: 27%;
+    }
+}
+
+/* ===========  спрайты  ================  */
+.sprite {
+    background-image: url(../img/ico/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-Group-2 {
+    width: 17px;
+    height: 16px;
+    background-position: -5px -5px;
+}
+
+.sprite-Server-2 {
+    width: 16px;
+    height: 16px;
+    background-position: -32px -5px;
+}
+
+.sprite-map-pin {
+    width: 15px;
+    height: 17px;
+    background-position: -5px -31px;
+}
+
+.sprite-menu {
+    width: 14px;
+    height: 10px;
+    background-position: -30px -31px;
+}
+
+.sprite-square {
+    width: 14px;
+    height: 14px;
+    background-position: -58px -5px;
+}
+
+.sprite-star {
+    width: 17px;
+    height: 17px;
+    background-position: -58px -29px;
+}
+.noBorder{
+    border: none !important; 
+    *{
+        border: none !important; 
+    }
+}
+.w-100{
+    width: 100%;
+}
+.w-50{
+    max-width: 49%;
+}
+.w-70{
+    max-width: 70%;
+}

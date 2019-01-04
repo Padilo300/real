@@ -15,11 +15,15 @@
     padding: 10px;
     margin: 5px 0;
     footer{
-        width: 100%;
+        width: max-content;
         >p{
             max-width: 300px;
             display: flex;
             justify-content: space-between;
+            *{
+                margin: 0 15px;
+                white-space: nowrap;
+            }
         }
     }
 }
@@ -33,7 +37,9 @@
     justify-content: space-between;
 }
 .wrapTabs{
-    margin: -35px 0 0 0;
+    @media screen and (min-width: 767px){
+        margin: -35px 0 0 0;
+    }
     .nav-tabs{
         justify-content: flex-end;
     }
@@ -59,4 +65,14 @@
         width: 100%;
         min-height: 600px;
     }
+}
+
+.hidden{
+    width: 100%;
+    overflow: auto;
+}
+.rootWrap{
+    max-width: 1365px;
+    margin: 0 auto;
+    min-width: 360px;
 }

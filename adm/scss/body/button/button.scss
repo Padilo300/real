@@ -1,0 +1,51 @@
+.btn-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: #828282;
+    cursor: pointer;
+    &:hover{
+        color: #2D9CDB;
+    }
+    i{
+        margin: 0 10px 0 0;
+    }
+}
+
+.INS-breadcrumb{
+    margin: 0;
+    padding: 4px 0;
+}
+.INS-btn-toogle{
+    background: transparent !important;
+    color: #000 !important;
+    border-radius: 0 !important;
+    border-color: #999 !important;
+    display: inline-block;
+    width: 70px !important;
+    height: 35px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > label{
+        background: transparent !important;
+        color: #000 !important;
+        border-radius: 0 !important;
+        border-color: #999 !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+.INS-btn-toogle--xs{
+    @extend .INS-btn-toogle;
+    width: 50px !important;
+}
+.btnFilterTab{
+    font-size: 1.1em;
+}

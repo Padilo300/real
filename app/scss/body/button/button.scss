@@ -1,3 +1,5 @@
+$main-btn-color: #55595C;
+
 .btn-img{
     display: flex;
     justify-content: space-between;
@@ -44,8 +46,51 @@
 }
 .INS-btn-toogle--xs{
     @extend .INS-btn-toogle;
-    width: 50px !important;
+    border: 1px solid #E4E6E9 !important;
+    width: 35px !important;
 }
 .btnFilterTab{
     font-size: 1.1em;
+    max-width: 280px;
+    margin: 0 auto 0 0;
+}
+
+.INS-btn-mainPage{
+    box-shadow: 0 4px 23px #E4E6E9;    
+    transition: all 0.3s;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    color: $main-btn-color;
+    width: 254px;
+    height: 43px;
+    text-align: center;
+    display: block;
+    line-height: 43px;
+    margin: 10px 0;
+    border: 1px solid #55595c40;
+    border-radius: 4px;
+    &:hover{
+        color: $main-btn-color;
+        text-decoration: none;
+        box-shadow: 0 0  10px #E4E6E9;
+        
+    }
+}
+.btn-transp{
+    display: block;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 10px;
+    color: #373A3C;
+    border: 1px solid #99999982;
+    transition: all 0.3s;
+    &:hover{
+        box-shadow: 0 0  10px #E4E6E9;
+    }
 }

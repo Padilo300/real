@@ -16,11 +16,12 @@
         <i class="sprite sprite-map-pin"></i>
         <i class="sprite sprite-square"></i>
         <i class="sprite sprite-star"></i> -->
+    <div class="rootWrap">
 
     <section class="container-fluid">
         <div class="row">
-            <div class="col col-12 col-md-3">
-                <div class="wrapBTN--SB btnFilterTab nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <div class="col col-12 col-md-12 col-xl-3">
+                <div class="wrapBTN--SB btnFilterTab nav nav-pills mb-3 ins-col-xl-12" id="pills-tab" role="tablist">
                     <button class="btn-img active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
                         <i class="sprite sprite-Group-2"></i>
                         Список
@@ -37,35 +38,27 @@
                 </div><!-- wrapBTN--center -->
                 
             </div><!-- col -->
-            <div class="col col-md-12 col-9">
-                    <div class="wrapBTN--SB">
-
+            <div class="col col-md-12 col-12 col-xl-9">
+                    <div class="wrapBTN--SB xsColumn">
                         <div class="wrapBTN--center">
-
                             <select class="form-control select-normal m03px">
                                 <option value="Днепропетровкая область">Днепропетровкая область</option>
                                 <option value="Днепропетровкая область">Днепропетровкая область</option>
                                 <option value="Днепропетровкая область">Днепропетровкая область</option>
                                 <option value="Днепропетровкая область">Днепропетровкая область</option>
                             </select>
-        
-        
                             <select class="form-control select-normal m03px">
                                 <option value="">За последний месяц</option>
                                 <option value="">За последний месяц</option>
                                 <option value="">За последний месяц</option>
                                 <option value="">За последний месяц</option>
                             </select>
-        
                             <select class="form-control select-normal m03px">
                                 <option value="">Сначала новые</option>
                                 <option value="">Сначала старые</option>
-                                <option value="">Сначала похуй</option>
+                                <option value="">Сначала с конца</option>
                             </select>
-                            
                         </div><!-- wrapBTN--center -->
-                        
-
                         <nav aria-label="breadcrumb" class="float-right">
                             <ol class="breadcrumb bg-none ">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -76,11 +69,9 @@
             </div><!-- col -->
         </div><!-- end row -->
         <div class="row">
-            <div class="col col-3">
+            <div class="col col-lg-4 col-xl-3 col-12 col-md-12 ins-col-xl-12 object-filter">
                 <form action="#" method="POST" class="formFilter">
-
                     <div class="btn-group wrapBTN--SB btn-group-toggle formFilter-row1 formFilter-row" data-toggle="buttons">
-
                         <label class="btn btn-secondary active INS-btn-toogle">
                             <input type="radio" name="options" id="option1" autocomplete="off" checked> Все
                         </label>
@@ -136,40 +127,40 @@
                                 <input type="text" class="form-control" id="input1">
                             </div><!-- form group -->
 
-                            <div class="wrapBTN--SB ">
-                                <b class="gray w-50">Количество комнат</b>
-                                <b class="gray w-50">Площадь, м<sup>2</sup></b>
-                            </div>
-
-                            <div class="wrapBTN--SB wrapInputBtn"><!-- wrap flex -->
-                                
-                                <div class="wrapBTN--center"><!-- inner flex -->
-                                    <div class="btn-group btn-group-toggle " data-toggle="buttons">
-                                        <label class="btn btn-secondary active INS-btn-toogle--xs">
-                                            <input type="radio" name="options" id="option1" autocomplete="off" checked> 1
-                                        </label>
-                                        <label class="btn btn-secondary INS-btn-toogle--xs">
-                                            <input type="radio" name="options" id="option2" autocomplete="off"> 2
-                                        </label>
-                                        <label class="btn btn-secondary INS-btn-toogle--xs">
-                                            <input type="radio" name="options" id="option3" autocomplete="off"> 3
-                                        </label>
-                                        <label class="btn btn-secondary INS-btn-toogle--xs">
-                                            <input type="radio" name="options" id="option3" autocomplete="off"> 4+
-                                        </label>
-                                    </div>
-                                </div>  <!-- inner flex -->
-                                <div class="wrapBTN--fend">   <!-- inner flex -->
-                                    <input type="number" class="w-50" name="" id="" placeholder="от" step="10">
-                                    <input type="number" class="w-50" name="" id="" placeholder="до" step="10">
-                                </div><!-- inner flex -->
-                            </div><!-- wrap flex -->
+                            <div class="form-group">
+                                <div class="wrapBTN--SB ">
+                                    <b class="gray w-50">Количество комнат</b>
+                                    <b class="gray w-50">Площадь, м<sup>2</sup></b>
+                                </div>
+    
+                                <div class="wrapBTN--SB wrapInputBtn"><!-- wrap flex -->
+                                    
+                                    <div class="wrapBTN--center"><!-- inner flex -->
+                                        <div class="btn-group btn-group-toggle row-rooms " data-toggle="buttons">
+                                            <label class="btn btn-secondary active INS-btn-toogle--xs">
+                                                <input type="radio" name="options" id="option1" autocomplete="off" checked> 1
+                                            </label>
+                                            <label class="btn btn-secondary INS-btn-toogle--xs">
+                                                <input type="radio" name="options" id="option2" autocomplete="off"> 2
+                                            </label>
+                                            <label class="btn btn-secondary INS-btn-toogle--xs">
+                                                <input type="radio" name="options" id="option3" autocomplete="off"> 3
+                                            </label>
+                                            <label class="btn btn-secondary INS-btn-toogle--xs">
+                                                <input type="radio" name="options" id="option3" autocomplete="off"> 4+
+                                            </label>
+                                        </div>
+                                    </div>  <!-- inner flex -->
+                                    <div class="wrapBTN--fend row-square">   <!-- inner flex -->
+                                        <input type="number" class="w-50" name="" id="" placeholder="от" step="10">
+                                        <input type="number" class="w-50" name="" id="" placeholder="до" step="10">
+                                    </div><!-- inner flex -->
+                                </div><!-- wrap flex -->
+                            </div><!-- form-group -->
                     </div><!-- formFilter-row -->
                     
-
-                    
                     <div class="formFilter-row">
-                        <div class="wrapBTN--SB">
+                        <div class="wrapBTN--SB wrap">
                                 <b class="gray">Цена</b>
                                 <div class="wrapBTN--SB w-50">
                                     <div class="form-check">
@@ -202,12 +193,12 @@
                     </div><!-- formFilter-row -->
                     
                     <div class="formFilter-row">
-                        <div class="wrapBTN--SB">
+                        <div class="wrapBTN--SB wrap">
                             <b class="gray">Этаж</b>
                         </div>
     
                         <div class="wrapBTN--SB">
-                            <div class="wrapBTN--SB w-50">   <!-- inner flex -->
+                            <div class="wrapBTN--SB row-level">   <!-- inner flex -->
                                 <input type="number" class="w-50" name="" id="" placeholder="от" step="10">
                                 <input type="number" class="w-50" name="" id="" placeholder="до" step="10">
                             </div><!-- inner flex -->
@@ -227,11 +218,11 @@
                     </div><!-- formFilter-row -->
                 </form>
             </div><!-- col -->
-            <div class="col col-9 wrap tab-content" id="pills-tabContent">
+            <div class="col col-lg-12 col-xl-9 col-md-12 col-12 wrap tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <div class="wrapAppartament">
-                        <div class="row">
-                            <div class="col col-3">
+                        <div class="row position-relative">
+                            <div class="col col-md-3 col-12">
                                 <div class="wrapAppartament-img">
                                     <div class="wrapAppartament-btnGrop">
                                         <a href="#">
@@ -249,7 +240,7 @@
                                     </div>
                                 </div><!-- wrapImgAppartament -->
                             </div><!-- col-3 -->
-                            <div class="col col-7 position-relative ">
+                            <div class="col col-12 col-md-7 position-relative wrap">
                                 <h1 class="h3 titleAppart">
                                     Героев Сталинграда просп., 4А, Оболонский р-н, 
                                     г. Киев
@@ -270,18 +261,19 @@
                                 <p class="descriptionAppart">
                                     Светлая двухкомнатная квартира с авторским ремонтом. 4 этаж 25 этажного кирпичного дома. Общая площадь 50 м2. Квартира с функциональной планировкой комнат, полностью укомплектована всей необходимой ...
                                 </p>
-                                <footer class="absolute-bottom">
-                                    <p>
-                                        <b> 
-                                            Обновленно: 18.12.2018
-                                        </b>
-                                        <a href="#">
-                                            Святослав Райский
-                                        </a>
-                                    </p>
-                                </footer>
+                            
                             </div><!-- col-9 -->
-                            <div class="col col-2">
+                            <footer class="absolute-bottom">
+                                <p>
+                                    <b> 
+                                        Обновленно: 18.12.2018
+                                    </b>
+                                    <a href="#">
+                                        Святослав Райский
+                                    </a>
+                                </p>
+                            </footer>
+                            <div class="col col-md-2 col-12">
                                 <p class="appartPrice">
                                     <b class="h2">
                                         99 000$
@@ -294,227 +286,254 @@
                         </div><!-- row -->
                     </div><!-- wrapAppartament -->
                     <div class="wrapAppartament">
-                            <div class="row">
-                                <div class="col col-3">
-                                    <div class="wrapAppartament-img">
-                                        <div class="wrapAppartament-btnGrop">
-                                            <a href="#">
-                                                <input type="checkbox" name="" id="">
-                                            </a>
-                                            <a href="#">
-                                                <i class="sprite sprite-menu"></i>
-                                            </a>
-                                            <a href="#">
-                                                <i class="sprite sprite-star"></i>
-                                            </a>
-                                        </div>
-                                        <div class="img">
-                                            <img src="http://kitchenguide.su/wp-content/uploads/2017/03/ii37.jpg" alt="">
-                                        </div>
-                                    </div><!-- wrapImgAppartament -->
-                                </div><!-- col-3 -->
-                                <div class="col col-7 position-relative ">
-                                    <h1 class="h3 titleAppart">
-                                        Героев Сталинграда просп., 4А, Оболонский р-н, 
-                                        г. Киев
-                                    </h1>
-                                    <p class="h4 wrapAppartParametr">
-                                        <span>
-                                            2 разд
-                                        </span>
-        
-                                        <span>
-                                            50 / 35 / 15 м<sup>2</sup>
-                                        </span>
-        
-                                        <span>
-                                            4 этаж из 11
-                                        </span>
-                                    </p>
-                                    <p class="descriptionAppart">
-                                        Светлая двухкомнатная квартира с авторским ремонтом. 4 этаж 25 этажного кирпичного дома. Общая площадь 50 м2. Квартира с функциональной планировкой комнат, полностью укомплектована всей необходимой ...
-                                    </p>
-                                    <footer class="absolute-bottom">
-                                        <p>
-                                            <b> 
-                                                Обновленно: 18.12.2018
-                                            </b>
-                                            <a href="#">
-                                                Святослав Райский
-                                            </a>
-                                        </p>
-                                    </footer>
-                                </div><!-- col-9 -->
-                                <div class="col col-2">
-                                    <p class="appartPrice">
-                                        <b class="h2">
-                                            99 000$
-                                        </b>
-                                        <span>
-                                            1 200$ за м<sup>2</sup>
-                                        </span>
-                                    </p>
-                                </div>
-                            </div><!-- row -->
-                        </div><!-- wrapAppartament -->
-                        <div class="wrapAppartament">
-                                <div class="row">
-                                    <div class="col col-3">
-                                        <div class="wrapAppartament-img">
-                                            <div class="wrapAppartament-btnGrop">
-                                                <a href="#">
-                                                    <input type="checkbox" name="" id="">
-                                                </a>
-                                                <a href="#">
-                                                    <i class="sprite sprite-menu"></i>
-                                                </a>
-                                                <a href="#">
-                                                    <i class="sprite sprite-star"></i>
-                                                </a>
-                                            </div>
-                                            <div class="img">
-                                                <img src="http://kitchenguide.su/wp-content/uploads/2017/03/ii37.jpg" alt="">
-                                            </div>
-                                        </div><!-- wrapImgAppartament -->
-                                    </div><!-- col-3 -->
-                                    <div class="col col-7 position-relative ">
-                                        <h1 class="h3 titleAppart">
-                                            Героев Сталинграда просп., 4А, Оболонский р-н, 
-                                            г. Киев
-                                        </h1>
-                                        <p class="h4 wrapAppartParametr">
-                                            <span>
-                                                2 разд
-                                            </span>
-            
-                                            <span>
-                                                50 / 35 / 15 м<sup>2</sup>
-                                            </span>
-            
-                                            <span>
-                                                4 этаж из 11
-                                            </span>
-                                        </p>
-                                        <p class="descriptionAppart">
-                                            Светлая двухкомнатная квартира с авторским ремонтом. 4 этаж 25 этажного кирпичного дома. Общая площадь 50 м2. Квартира с функциональной планировкой комнат, полностью укомплектована всей необходимой ...
-                                        </p>
-                                        <footer class="absolute-bottom">
-                                            <p>
-                                                <b> 
-                                                    Обновленно: 18.12.2018
-                                                </b>
-                                                <a href="#">
-                                                    Святослав Райский
-                                                </a>
-                                            </p>
-                                        </footer>
-                                    </div><!-- col-9 -->
-                                    <div class="col col-2">
-                                        <p class="appartPrice">
-                                            <b class="h2">
-                                                99 000$
-                                            </b>
-                                            <span>
-                                                1 200$ за м<sup>2</sup>
-                                            </span>
-                                        </p>
+                        <div class="row position-relative">
+                            <div class="col col-md-3 col-12">
+                                <div class="wrapAppartament-img">
+                                    <div class="wrapAppartament-btnGrop">
+                                        <a href="#">
+                                            <input type="checkbox" name="" id="">
+                                        </a>
+                                        <a href="#">
+                                            <i class="sprite sprite-menu"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="sprite sprite-star"></i>
+                                        </a>
                                     </div>
-                                </div><!-- row -->
-                            </div><!-- wrapAppartament -->
-                </div><!-- id="pills-home" -->
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    <table class="table text-center lh-min-all table-hover">
-                        <thead>
-                            <tr>
-                                <th>
-                                    <input type="checkbox" id="checkAll">
-                                </th>
-                                <th>
-                                        №
-                                </th>
-                                <th>
-                                  <i class="sprite sprite-menu"></i>
-                                </th>
-                                <th>
-                                    П
-                                </th>
-                                <th>
-                                    Описание
-                                </th>
-                                <th>
-                                    Площадь, м<sup>2</sup>
-                                </th>
-                                <th>
-                                    Этаж
-                                </th>
-                                <th>
-                                    Комната
-                                </th>
-                                <th>
-                                    Цена    
-                                </th>
-                                <th>
-                                    За м<sup>2</sup>
-                                </th>
-                                <th>
-                                    Отвецтвенный
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody id="tableCheck">
-                            <tr>
-                                <td>
-                                    <input type="checkbox">
-                                </td>
-                                <td>
-                                    2
-                                </td>
-                                <td>
-                                    <i class="sprite sprite-menu"></i>
-                                </td>
-                                <td>
-                                    <span class="text-success">
-                                        ЭКС
-                                    </span>
-                                </td>
-                                <td>
+                                    <div class="img">
+                                        <img src="http://kitchenguide.su/wp-content/uploads/2017/03/ii37.jpg" alt="">
+                                    </div>
+                                </div><!-- wrapImgAppartament -->
+                            </div><!-- col-3 -->
+                            <div class="col col-12 col-md-7 position-relative wrap">
+                                <h1 class="h3 titleAppart">
                                     Героев Сталинграда просп., 4А, Оболонский р-н, 
                                     г. Киев
-                                </td>
-                                <td>
-                                    50 / 35 / 15    
-                                </td>
-                                <td>
-                                    4 / 11
-                                </td>
-                                <td>
-                                    2
-                                </td>
-                                <td>
-                                    99 000 $
-                                    <br>
-                                    <span class="small--grey">
-                                        2 777 247 грн.
+                                </h1>
+                                <p class="h4 wrapAppartParametr">
+                                    <span>
+                                        2 разд
                                     </span>
-                                </td>
-                                <td>
-                                    1 200 $ за м²
-                                    <br>
-                                    <span class="small--grey">
-                                        1 200 $ за м²
+
+                                    <span>
+                                        50 / 35 / 15 м<sup>2</sup>
                                     </span>
-                                </td>
-                                <td>
+
+                                    <span>
+                                        4 этаж из 11
+                                    </span>
+                                </p>
+                                <p class="descriptionAppart">
+                                    Светлая двухкомнатная квартира с авторским ремонтом. 4 этаж 25 этажного кирпичного дома. Общая площадь 50 м2. Квартира с функциональной планировкой комнат, полностью укомплектована всей необходимой ...
+                                </p>
+                            
+                            </div><!-- col-9 -->
+                            <footer class="absolute-bottom">
+                                <p>
+                                    <b> 
+                                        Обновленно: 18.12.2018
+                                    </b>
                                     <a href="#">
                                         Святослав Райский
                                     </a>
-
-                                    <div class="small--grey">
-                                        АН “Вариант”
+                                </p>
+                            </footer>
+                            <div class="col col-md-2 col-12">
+                                <p class="appartPrice">
+                                    <b class="h2">
+                                        99 000$
+                                    </b>
+                                    <span>
+                                        1 200$ за м<sup>2</sup>
+                                    </span>
+                                </p>
+                                <p class="appartPrice">
+                                    <b class="h2">
+                                        <small> 
+                                            2 777 242 грн
+                                        </small>
+                                    </b>
+                                    <span>
+                                        32 000 грн. за м<sup>2</sup>
+                                    </span>
+                                </p>
+                            </div>
+                        </div><!-- row -->
+                    </div><!-- wrapAppartament -->
+                    <div class="wrapAppartament">
+                        <div class="row position-relative">
+                            <div class="col col-md-3 col-12">
+                                <div class="wrapAppartament-img">
+                                    <div class="wrapAppartament-btnGrop">
+                                        <a href="#">
+                                            <input type="checkbox" name="" id="">
+                                        </a>
+                                        <a href="#">
+                                            <i class="sprite sprite-menu"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="sprite sprite-star"></i>
+                                        </a>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr>
+                                    <div class="img">
+                                        <img src="http://kitchenguide.su/wp-content/uploads/2017/03/ii37.jpg" alt="">
+                                    </div>
+                                </div><!-- wrapImgAppartament -->
+                            </div><!-- col-3 -->
+                            <div class="col col-12 col-md-7 position-relative wrap">
+                                <h1 class="h3 titleAppart">
+                                    Героев Сталинграда просп., 4А, Оболонский р-н, 
+                                    г. Киев
+                                </h1>
+                                <p class="h4 wrapAppartParametr">
+                                    <span>
+                                        2 разд
+                                    </span>
+
+                                    <span>
+                                        50 / 35 / 15 м<sup>2</sup>
+                                    </span>
+
+                                    <span>
+                                        4 этаж из 11
+                                    </span>
+                                </p>
+                                <p class="descriptionAppart">
+                                    Светлая двухкомнатная квартира с авторским ремонтом. 4 этаж 25 этажного кирпичного дома. Общая площадь 50 м2. Квартира с функциональной планировкой комнат, полностью укомплектована всей необходимой ...
+                                </p>
+                            
+                            </div><!-- col-9 -->
+                            <footer class="absolute-bottom">
+                                <p>
+                                    <b> 
+                                        Обновленно: 18.12.2018
+                                    </b>
+                                    <a href="#">
+                                        Святослав Райский
+                                    </a>
+                                </p>
+                            </footer>
+                            <div class="col col-md-2 col-12">
+                                <p class="appartPrice">
+                                    <b class="h2">
+                                        99 000$
+                                    </b>
+                                    <span>
+                                        1 200$ за м<sup>2</sup>
+                                    </span>
+                                </p>
+                            </div>
+                        </div><!-- row -->
+                    </div><!-- wrapAppartament -->
+                    <div class="wrapAppartament">
+                        <div class="row position-relative">
+                            <div class="col col-md-3 col-12">
+                                <div class="wrapAppartament-img">
+                                    <div class="wrapAppartament-btnGrop">
+                                        <a href="#">
+                                            <input type="checkbox" name="" id="">
+                                        </a>
+                                        <a href="#">
+                                            <i class="sprite sprite-menu"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="sprite sprite-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="img">
+                                        <img src="http://kitchenguide.su/wp-content/uploads/2017/03/ii37.jpg" alt="">
+                                    </div>
+                                </div><!-- wrapImgAppartament -->
+                            </div><!-- col-3 -->
+                            <div class="col col-12 col-md-7 position-relative wrap">
+                                <h1 class="h3 titleAppart">
+                                    Героев Сталинграда просп., 4А, Оболонский р-н, 
+                                    г. Киев
+                                </h1>
+                                <p class="h4 wrapAppartParametr">
+                                    <span>
+                                        2 разд
+                                    </span>
+
+                                    <span>
+                                        50 / 35 / 15 м<sup>2</sup>
+                                    </span>
+
+                                    <span>
+                                        4 этаж из 11
+                                    </span>
+                                </p>
+                                <p class="descriptionAppart">
+                                    Светлая двухкомнатная квартира с авторским ремонтом. 4 этаж 25 этажного кирпичного дома. Общая площадь 50 м2. Квартира с функциональной планировкой комнат, полностью укомплектована всей необходимой ...
+                                </p>
+                            
+                            </div><!-- col-9 -->
+                            <footer class="absolute-bottom">
+                                <p>
+                                    <b> 
+                                        Обновленно: 18.12.2018
+                                    </b>
+                                    <a href="#">
+                                        Святослав Райский
+                                    </a>
+                                </p>
+                            </footer>
+                            <div class="col col-md-2 col-12">
+                                <p class="appartPrice">
+                                    <b class="h2">
+                                        99 000$
+                                    </b>
+                                    <span>
+                                        1 200$ за м<sup>2</sup>
+                                    </span>
+                                </p>
+                            </div>
+                        </div><!-- row -->
+                    </div><!-- wrapAppartament -->
+                </div><!-- id="pills-home" -->
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="hidden">
+
+                    <table class="table text-center lh-min-all table-hover">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <input type="checkbox" id="checkAll">
+                                    </th>
+                                    <th>
+                                            №
+                                    </th>
+                                    <th>
+                                      <i class="sprite sprite-menu"></i>
+                                    </th>
+                                    <th>
+                                        П
+                                    </th>
+                                    <th>
+                                        Описание
+                                    </th>
+                                    <th>
+                                        Площадь, м<sup>2</sup>
+                                    </th>
+                                    <th>
+                                        Этаж
+                                    </th>
+                                    <th>
+                                        Комната
+                                    </th>
+                                    <th>
+                                        Цена    
+                                    </th>
+                                    <th>
+                                        За м<sup>2</sup>
+                                    </th>
+                                    <th>
+                                        Отвецтвенный
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableCheck">
+                                <tr>
                                     <td>
                                         <input type="checkbox">
                                     </td>
@@ -878,8 +897,61 @@
                                                                 </div>
                                                             </td>
                                                         </tr>
-                        </tbody>
-                    </table>
+                                                        <tr>
+                                                                <td>
+                                                                    <input type="checkbox">
+                                                                </td>
+                                                                <td>
+                                                                    2
+                                                                </td>
+                                                                <td>
+                                                                    <i class="sprite sprite-menu"></i>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="text-success">
+                                                                        ЭКС
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    Героев Сталинграда просп., 4А, Оболонский р-н, 
+                                                                    г. Киев
+                                                                </td>
+                                                                <td>
+                                                                    50 / 35 / 15    
+                                                                </td>
+                                                                <td>
+                                                                    4 / 11
+                                                                </td>
+                                                                <td>
+                                                                    2
+                                                                </td>
+                                                                <td>
+                                                                    99 000 $
+                                                                    <br>
+                                                                    <span class="small--grey">
+                                                                        2 777 247 грн.
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    1 200 $ за м²
+                                                                    <br>
+                                                                    <span class="small--grey">
+                                                                        1 200 $ за м²
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <a href="#">
+                                                                        Святослав Райский
+                                                                    </a>
+                                
+                                                                    <div class="small--grey">
+                                                                        АН “Вариант”
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div><!-- id="pills-profile" -->
                 <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                     <div class="wrapMap">
@@ -913,6 +985,7 @@
             </div><!-- col -->
         </div><!-- row -->
     </section><!-- end cont -->
+    </div>
     <script src="/js/libs/jquery-3.3.1.min.js"   ></script>
     <script src="/js/libs/bootstrap.min.js"     defer ></script>
     <script src="/js/libs/slick.min.js"         defer ></script>

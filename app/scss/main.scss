@@ -5,39 +5,44 @@
 @import "../../node_modules/bootstrap/scss/bootstrap"; // Подключаем ВЕСЬ бутстрап
 
 // переменные
-@import "variable/variable"   ; 
-
+@import "variable/variable"         ; 
 
 // special animation->placeholder; castom browserScrollBar
 @import "special/special.scss"      ;
-@import "special/placeholder.scss"  ;
+@import "special/placeholder"       ;
+@import "special/grid"              ;
+@import "special/decoration"        ;
 
 // head
-@import "head/header"       ;
-@import "head/mobile_nav"   ;
-@import "head/nav"          ;
+@import "head/header"               ;
+@import "head/mobile_nav"           ;
+@import "head/nav"                  ;
+
+// section
+@import "section/filter"            ;
 
 // body 
-@import 'body/button/button';
-@import 'body/form/form'    ;
-@import 'body/text/text'    ;
+@import 'body/button/button'        ;
+@import 'body/button/wrapBTN'       ;
+@import 'body/form/form'            ;
+@import 'body/text/text'            ;
 
 //wraps
-@import 'wraps/wraps'       ;
+@import 'wraps/wraps'               ;
 
 //slider
-@import 'slider/slick'          ;
-@import 'slider/lightSlider'    ;
-@import 'slider/INS-slider'     ;
+@import 'slider/slick'              ;
+@import 'slider/lightSlider'        ;
+@import 'slider/INS-slider'         ;
 
 //table
-@import 'table/table'           ;
+@import 'table/table'               ;
 
 // footer
-@import 'footer/footer'     ;
+@import 'footer/footer'             ;
 
 // pages HOME
-@import 'pages/home/first_section';
+@import 'pages/home/first_section'  ;
 
 
 body{
@@ -52,5 +57,4 @@ img{
 
 *{
     font-size: 12px;
-    transition: all 0.3s;
 }

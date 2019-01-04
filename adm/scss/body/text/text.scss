@@ -1,0 +1,99 @@
+html body {
+    h1,h2,h3,h4,h5, h6{
+        color: #4F4F4F ;
+    }
+}
+.gray{
+    color: #4F4F4F !important;
+}
+.small--grey{
+    line-height: 25px;
+    font-size: 12px;
+    color: #828282;
+}
+.wrapAppartParametr{
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    color: $colorGray;
+    
+}
+.titleAppart{
+    color: $colorGray;
+    @media screen and (max-width: 767px){
+        text-align: center;
+    }
+}
+.descriptionAppart{
+    line-height: 18px;
+    max-width: 500px;
+    margin: 0 0 30px 0;
+
+}
+.appartPrice{
+    text-align: right;
+    color: $colorGray;
+    *{
+        color: $colorGray;
+    }
+    >span{
+        display: block;
+        font-size: 1.1rem;
+    }
+}
+.pagination *{
+    font-size: 1.5rem;
+}
+.price--red{
+    color: $colorRed;
+    line-height: 25px;
+    font-size: 24px;
+    .priceM2{
+        color: $colorGray;
+        margin: 5px 0 10px 0;
+    }
+    margin: 0;
+}   
+
+
+.sliderLabel{
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    right: 5px;
+    top: 10px;
+    height: 80px;
+    justify-content: space-between;
+    
+}
+.LabelIteam{
+    padding: 3px 15px;
+    border-radius: 4px;
+    color: #fff;
+    margin: 0 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.LabelIteam--green{
+    @extend .LabelIteam ;
+    background: #5CB85C;
+}
+.LabelIteam--orange{
+    @extend .LabelIteam ;
+    background: #E27836;
+}
+.LabelIteam--blue{
+    @extend .LabelIteam ;
+    background: #2D9CDB;
+}
+
+a{
+    color: #2D9CDB;
+}
+.lh-min-all{
+    line-height: 15px;
+    *{
+        line-height: 15px;
+    }
+}

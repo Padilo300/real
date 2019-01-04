@@ -1,0 +1,10 @@
+/* сдвиг placeholder-а вправо при фокусе*/
+input::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.6s ease;}
+input::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.6s ease;}
+input:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.6s ease;}
+input:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.6s ease;}
+input:focus::-webkit-input-placeholder {text-indent: 105%;  transition: text-indent 0.6s ease;}
+input:focus::-moz-placeholder          {text-indent: 105%;  transition: text-indent 0.6s ease;}
+input:focus:-moz-placeholder           {text-indent: 105%;  transition: text-indent 0.6s ease;}
+input:focus:-ms-input-placeholder      {text-indent: 105%;  transition: text-indent 0.6s ease;}
+

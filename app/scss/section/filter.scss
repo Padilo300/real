@@ -1,0 +1,52 @@
+$heaght: 30px;
+
+.object-filter{
+    max-width: 300px;
+    @media screen and (min-width: 500px) and (max-width: 1200px){
+        
+        margin: 0 auto;
+    }
+    margin: 0 auto  0 0 ;
+    select,input{
+        height: $heaght;
+        border-radius: 0;
+        border: 1px solid #E4E6E9;
+    }
+    .row-level{
+        max-width: 100px;
+        input{
+            width: 44px !important;
+            padding: 0 0  0 5px;
+        }
+        & + .form-check{
+            line-height: 27px;
+            input{
+                top: 4px;
+                height: auto !important;
+            }
+            & + .form-check{
+            line-height: 27px;
+                input{
+                    top: 4px;
+                    height: auto !important;
+                }   
+            }
+        }
+    }
+    .row-rooms{
+        label{
+            height: $heaght !important;
+        }
+    }
+    .row-square{
+        display: block;
+        input{
+            height: $heaght;
+            width: 60px !important;
+            float: right;
+            &:last-child{
+                margin: 0 2px 0 0 ;
+            }
+        }
+    }
+}

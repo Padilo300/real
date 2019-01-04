@@ -1,11 +1,19 @@
 html body {
     h1,h2,h3,h4,h5, h6{
-        color: #4F4F4F !important;
+        color: #4F4F4F ;
     }
 }
+/* =========================== цвета ========================= */
 .gray{
-    color: #4F4F4F !important;
+    color: #4f4f4f91 !important;
 }
+.green{
+    color: #219653
+}
+.red{
+    color: #ff0000;
+}
+
 .small--grey{
     line-height: 25px;
     font-size: 12px;
@@ -18,8 +26,14 @@ html body {
     color: $colorGray;
     
 }
+.text-upper{
+    text-transform: uppercase;
+}
 .titleAppart{
     color: $colorGray;
+    @media screen and (max-width: 767px){
+        text-align: center;
+    }
 }
 .descriptionAppart{
     line-height: 18px;
@@ -30,12 +44,16 @@ html body {
 .appartPrice{
     text-align: right;
     color: $colorGray;
+    font-size: 1.7rem;
+    b{
+        font-size: 1.7rem;
+    }
     *{
         color: $colorGray;
     }
     >span{
         display: block;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
 .pagination *{
@@ -84,7 +102,6 @@ html body {
     @extend .LabelIteam ;
     background: #2D9CDB;
 }
-
 a{
     color: #2D9CDB;
 }
@@ -93,4 +110,44 @@ a{
     *{
         line-height: 15px;
     }
+}
+
+.bTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-weight: 500;
+    color: #000000b5;
+    position: relative;
+    margin: 20px 0 0 0 ;
+    span{
+        display: flex;
+        justify-content: start;
+        position: absolute;
+        top: -16px;
+        font-size: 10px;
+    }
+    .hasInpuut{
+        top: -22px;
+    }
+    input[type="number"]{
+        width: 90px;
+    }
+    input[type="radio"]{
+        position: relative;
+        top: -2px; 
+    }
+    input{
+        top: -2px;
+    }
+    label{
+        margin: 0;
+        line-height: 26px;
+        padding: 0 0 0 5px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+}
+.weght-400{
+    font-weight: 400 !important;
 }
