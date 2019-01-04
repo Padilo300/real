@@ -3,4 +3,16 @@
     justify-content: space-between;
     max-width: 280px;
     margin: 0 auto 0 0;
+    
+    @media screen and (max-width: 1210px){
+        margin: 0 auto;
+    }
+}
+.btn-xs-column{
+    @media screen and (max-width: 1199px){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

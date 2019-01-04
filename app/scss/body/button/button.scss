@@ -94,3 +94,19 @@ $main-btn-color: #55595C;
         box-shadow: 0 0  10px #E4E6E9;
     }
 }
+.btn-primary{
+    background : rgba(45, 156, 219, 1);
+    border-color: rgba(45, 156, 219, 1);
+    transition:  all 0.3s;
+    &:hover{
+        background : rgba(45, 156, 219, 1);
+        border-color: rgba(45, 156, 219, 1);
+        box-shadow: 0 0 15px 0 rgba(45, 156, 219, 1);
+    }
+}
+.tabsObject{
+    @media screen and (max-width: 1210px){
+        justify-content: center;
+        margin: 10px 0  ;
+    }
+}

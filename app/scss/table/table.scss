@@ -34,7 +34,6 @@
     transition: all 0.3s;
     &:hover{
         box-shadow: 0 0  10px #E4E6E9;
-        
     }
     thead{
         tr{
@@ -48,6 +47,10 @@
     }
 }
 .tableObject{
+    
+    @media screen and (max-width: 1210px){
+        margin: 0 auto;
+    }
     max-width: 880px;
     table-layout: fixed;
     font-size: 12px;
@@ -60,6 +63,7 @@
                 padding-right: 0;
                 font-weight: 400;
                 border-bottom: 0;
+                border-top: 0;
 
                 &:nth-child(1){// #
                     width: 20px;
@@ -88,7 +92,7 @@
                     width: 77px;
                 }   
                 &:nth-child(7){ // Этаж
-                    width: 48;
+                    width: 48px;
                 }   
                 &:nth-child(8){ // Комнат
                     width: 45px;
@@ -99,7 +103,7 @@
                 &:nth-child(10){ // Расположение
                     width: 103px;
                 }   
-                &:nth-child(11){ // Отвецтвенный
+                &:nth-child(11){ // Ответственный
                     width: 130px;
                 }   
             }
@@ -111,6 +115,7 @@
                 font-size: 10px;
                 padding-left: 0;
                 padding-right: 0;
+                
                 *{
                     font-size: 10px;
                 }
@@ -118,7 +123,14 @@
 
                 }
                 &:nth-child(2){ // меню
-                    
+                    a{
+                        display: block;
+                        text-align: center;
+                        margin: 0 0 3px 0;
+                        i{
+                            margin: 0 auto;
+                        }
+                    }
                 }
                 &:nth-child(3){ //  Рез
                     
@@ -156,4 +168,101 @@
             }
         }
     }
+}
+
+.tableObject--reqvest{
+    @media screen and (max-width: 1210px){
+        margin: 0 auto;
+    }
+    table-layout: fixed;
+    max-width: 880px;
+    font-size: 12px;
+    text-align: center;
+    color: #4F4F4F;
+    text-align: center;
+    line-height: 15px;
+    *{
+        line-height: 15px;
+    }
+    thead{
+        tr{
+            th{
+                padding-left:  0;
+                padding-right: 0;
+                font-size: 12px;
+                font-weight: 400;
+                border-bottom: none;
+                &:nth-child(1){ // чекбокс
+                    width: 20px;
+                }
+                &:nth-child(2){ // номер
+                    width: 22px;
+                }
+                &:nth-child(3){ // меню
+                    width: 23px;
+                    a{
+                        display: block;
+                        text-align: center;
+                        margin: 0 0 3px 0;
+                        i{
+                            margin: 0 auto;
+                        }
+                    }
+                }
+                &:nth-child(4){ // п
+                    width: 35px;
+                }
+                &:nth-child(5){ // описание
+                    width: 240px;
+                }
+                &:nth-child(6){ // площадь
+                    width: 86px;
+                }
+                &:nth-child(7){ // этаж
+                    width: 53px;
+                }
+                &:nth-child(8){ // комнат
+                    width: 50px;
+                }
+                &:nth-child(9){ //цена 
+                    width: 87px;
+                }
+                &:nth-child(10){ // за м2
+                    width: 87px;
+                }
+                &:nth-child(11){ // Ответственный
+                    width: 143px;
+                }
+            }
+
+        }
+    }
+    tbody{
+        tr:hover{
+            background: #bdbdbd2b;
+        }
+        tr{
+            td{
+                font-size: 10px;
+                padding-left:  0;
+                padding-right: 0;
+                *{
+                    font-size: 10px;
+                }
+                &:nth-child(3){
+                    a{
+                        display: block;
+                        text-align: center;
+                        margin: 0 0 3px 0;
+                        i{
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+            
+        }
+        
+    }
+   
 }

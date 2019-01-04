@@ -76,3 +76,17 @@
     margin: 0 auto;
     min-width: 360px;
 }
+.wrapTableObject{
+    margin: 10px 0;
+    overflow: auto;
+    @media screen and (max-width: 1210px){
+        margin: 15px auto;
+    }
+    max-width: 880px;
+    box-shadow: 0 4px 23px #E4E6E9;    
+    transition: all 0.3s;
+    padding: 0 5px;
+    &:hover{
+        box-shadow: 0 0  10px #E4E6E9;
+    }
+}

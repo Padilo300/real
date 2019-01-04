@@ -8816,8 +8816,14 @@ input:focus:-ms-input-placeholder {
 
 .object-filter {
   max-width: 300px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   margin: 0 auto  0 0; }
   @media screen and (min-width: 500px) and (max-width: 1200px) {
+    .object-filter {
+      margin: 0 auto; } }
+  @media screen and (max-width: 500px) {
     .object-filter {
       margin: 0 auto; } }
   .object-filter select, .object-filter input {
@@ -8850,6 +8856,9 @@ input:focus:-ms-input-placeholder {
       float: right; }
       .object-filter .row-square input:last-child {
         margin: 0 2px 0 0; }
+  .object-filter .filterStart {
+    display: block;
+    margin: 30px 0 0 auto; }
 
 .btn-img {
   display: -webkit-box;
@@ -8972,6 +8981,26 @@ input:focus:-ms-input-placeholder {
     -webkit-box-shadow: 0 0  10px #E4E6E9;
             box-shadow: 0 0  10px #E4E6E9; }
 
+.btn-primary {
+  background: #2d9cdb;
+  border-color: #2d9cdb;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+  .btn-primary:hover {
+    background: #2d9cdb;
+    border-color: #2d9cdb;
+    -webkit-box-shadow: 0 0 15px 0 #2d9cdb;
+            box-shadow: 0 0 15px 0 #2d9cdb; }
+
+@media screen and (max-width: 1210px) {
+  .tabsObject {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10px 0; } }
+
 .group-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -8983,6 +9012,29 @@ input:focus:-ms-input-placeholder {
           justify-content: space-between;
   max-width: 280px;
   margin: 0 auto 0 0; }
+  @media screen and (max-width: 1210px) {
+    .group-btn {
+      margin: 0 auto; } }
+
+@media screen and (max-width: 1199px) {
+  .btn-xs-column {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 .select-normal {
   max-width: 200px;
@@ -9192,6 +9244,25 @@ a {
 .weght-400 {
   font-weight: 400 !important; }
 
+.titelTableObject {
+  height: 28px;
+  margin: 0 -5px;
+  line-height: 29px;
+  padding: 0 10px;
+  text-transform: uppercase; }
+
+.bg-lightPink {
+  background: #f2dede; }
+
+.bg-lightCrema {
+  background: rgba(242, 153, 74, 0.29); }
+
+.bg-lightBlue {
+  background: #d9edf7; }
+
+.bg-lightGreen {
+  background: #dff0d8; }
+
 .wrapBTN--center {
   display: -webkit-box;
   display: -webkit-flex;
@@ -9300,6 +9371,23 @@ a {
   max-width: 1365px;
   margin: 0 auto;
   min-width: 360px; }
+
+.wrapTableObject {
+  margin: 10px 0;
+  overflow: auto;
+  max-width: 880px;
+  -webkit-box-shadow: 0 4px 23px #E4E6E9;
+          box-shadow: 0 4px 23px #E4E6E9;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 0 5px; }
+  @media screen and (max-width: 1210px) {
+    .wrapTableObject {
+      margin: 15px auto; } }
+  .wrapTableObject:hover {
+    -webkit-box-shadow: 0 0  10px #E4E6E9;
+            box-shadow: 0 0  10px #E4E6E9; }
 
 .slick-slider {
   position: relative;
@@ -9857,11 +9945,15 @@ a {
   font-size: 12px;
   text-align: center;
   color: #4F4F4F; }
+  @media screen and (max-width: 1210px) {
+    .tableObject {
+      margin: 0 auto; } }
   .tableObject thead tr th {
     padding-left: 0;
     padding-right: 0;
     font-weight: 400;
-    border-bottom: 0; }
+    border-bottom: 0;
+    border-top: 0; }
     .tableObject thead tr th:nth-child(1) {
       width: 20px; }
     .tableObject thead tr th:nth-child(2) {
@@ -9881,7 +9973,7 @@ a {
     .tableObject thead tr th:nth-child(6) {
       width: 77px; }
     .tableObject thead tr th:nth-child(7) {
-      width: 48; }
+      width: 48px; }
     .tableObject thead tr th:nth-child(8) {
       width: 45px; }
     .tableObject thead tr th:nth-child(9) {
@@ -9896,6 +9988,12 @@ a {
     padding-right: 0; }
     .tableObject tbody tr td * {
       font-size: 10px; }
+    .tableObject tbody tr td:nth-child(2) a {
+      display: block;
+      text-align: center;
+      margin: 0 0 3px 0; }
+      .tableObject tbody tr td:nth-child(2) a i {
+        margin: 0 auto; }
     .tableObject tbody tr td:nth-child(4) {
       padding-left: 5px;
       padding-right: 5px; }
@@ -9906,21 +10004,88 @@ a {
     .tableObject tbody tr td:nth-child(11) span {
       display: block; }
 
-@media screen and (max-width: 1199px) {
-  .xsColumn {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; } }
+.tableObject--reqvest {
+  table-layout: fixed;
+  max-width: 880px;
+  font-size: 12px;
+  text-align: center;
+  color: #4F4F4F;
+  text-align: center;
+  line-height: 15px; }
+  @media screen and (max-width: 1210px) {
+    .tableObject--reqvest {
+      margin: 0 auto; } }
+  .tableObject--reqvest * {
+    line-height: 15px; }
+  .tableObject--reqvest thead tr th {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 12px;
+    font-weight: 400;
+    border-bottom: none; }
+    .tableObject--reqvest thead tr th:nth-child(1) {
+      width: 20px; }
+    .tableObject--reqvest thead tr th:nth-child(2) {
+      width: 22px; }
+    .tableObject--reqvest thead tr th:nth-child(3) {
+      width: 23px; }
+      .tableObject--reqvest thead tr th:nth-child(3) a {
+        display: block;
+        text-align: center;
+        margin: 0 0 3px 0; }
+        .tableObject--reqvest thead tr th:nth-child(3) a i {
+          margin: 0 auto; }
+    .tableObject--reqvest thead tr th:nth-child(4) {
+      width: 35px; }
+    .tableObject--reqvest thead tr th:nth-child(5) {
+      width: 240px; }
+    .tableObject--reqvest thead tr th:nth-child(6) {
+      width: 86px; }
+    .tableObject--reqvest thead tr th:nth-child(7) {
+      width: 53px; }
+    .tableObject--reqvest thead tr th:nth-child(8) {
+      width: 50px; }
+    .tableObject--reqvest thead tr th:nth-child(9) {
+      width: 87px; }
+    .tableObject--reqvest thead tr th:nth-child(10) {
+      width: 87px; }
+    .tableObject--reqvest thead tr th:nth-child(11) {
+      width: 143px; }
+  .tableObject--reqvest tbody tr:hover {
+    background: #bdbdbd2b; }
+  .tableObject--reqvest tbody tr td {
+    font-size: 10px;
+    padding-left: 0;
+    padding-right: 0; }
+    .tableObject--reqvest tbody tr td * {
+      font-size: 10px; }
+    .tableObject--reqvest tbody tr td:nth-child(3) a {
+      display: block;
+      text-align: center;
+      margin: 0 0 3px 0; }
+      .tableObject--reqvest tbody tr td:nth-child(3) a i {
+        margin: 0 auto; }
+
+.xsColumn {
+  margin: 5px 0 0 0; }
+  @media screen and (max-width: 767px) {
+    .xsColumn {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .xsColumn select {
+        width: 100%;
+        margin: 3px 0; } }
 
 body {
   background: #fff;

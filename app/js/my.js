@@ -2,21 +2,20 @@ $(document).ready(function () {
 
     
   
-    $("#content-slider").lightSlider({
-        loop:true,
-        keyPress:true
+/* 
+    var check = true;
+    $('#checkAll').on('click', function(){
+        var p = $(this).closest("table") ;
+        $( p + ' #tableCheck tr td input').prop('checked', check);
+        check = !check;
     });
-    $('#image-gallery').lightSlider({
-        gallery:true,
-        item:1,
-        thumbItem:9,
-        slideMargin: 0,
-        speed:500,
-        auto:true,
-        loop:true,
-        onSliderLoad: function() {
-            $('#image-gallery').removeClass('cS-hidden');
-        }  
+ */
+
+    var check = true;
+    $('.checkAll').on('click', function(){
+        var p = $(this).closest("table") ;
+        p.find('input' ).prop('checked', check);
+        check = !check;
     });
 
 });
