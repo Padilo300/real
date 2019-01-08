@@ -8886,7 +8886,7 @@ input:focus:-ms-input-placeholder {
   margin: 0;
   padding: 4px 0; }
 
-.INS-btn-toogle, .INS-btn-toogle--xs {
+.INS-btn-toogle, .INS-btn-toogle--a, .INS-btn-toogle--xs {
   background: transparent !important;
   color: #000 !important;
   -webkit-border-radius: 0 !important;
@@ -8907,7 +8907,7 @@ input:focus:-ms-input-placeholder {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .INS-btn-toogle > label, .INS-btn-toogle--xs > label {
+  .INS-btn-toogle > label, .INS-btn-toogle--a > label, .INS-btn-toogle--xs > label {
     background: transparent !important;
     color: #000 !important;
     -webkit-border-radius: 0 !important;
@@ -8927,6 +8927,15 @@ input:focus:-ms-input-placeholder {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+
+.INS-btn-toogle--a {
+  width: 60px !important;
+  height: 30px !important;
+  text-align: center;
+  line-height: 30px;
+  font-size: 10px;
+  color: #373A3C !important;
+  white-space: nowrap; }
 
 .INS-btn-toogle--xs {
   border: 1px solid #E4E6E9 !important;
@@ -9311,6 +9320,8 @@ a {
       .wrapAppartament footer > p * {
         margin: 0 15px;
         white-space: nowrap; }
+  .wrapAppartament .hrefObject {
+    color: #4F4F4F; }
 
 .wrapAppartament-img {
   display: -webkit-box;

@@ -44,6 +44,16 @@ $main-btn-color: #55595C;
         
     }
 }
+.INS-btn-toogle--a{
+    @extend .INS-btn-toogle;
+    width: 60px !important;
+    height: 30px !important;
+    text-align: center;
+    line-height: 30px;
+    font-size: 10px;
+    color: #373A3C !important;
+    white-space: nowrap;
+}
 .INS-btn-toogle--xs{
     @extend .INS-btn-toogle;
     border: 1px solid #E4E6E9 !important;
