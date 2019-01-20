@@ -266,3 +266,43 @@
     }
    
 }
+
+.table-stap{
+    table-layout: fixed;
+    padding: 0;
+    border-top: none;
+    vertical-align: middle;
+    width: 100%;
+    tbody{
+        tr{
+            td{
+                &:first-child{
+                    width: 150px;
+                }
+            }
+            &.ynitaz{
+                td{
+                    &:first-child{
+
+                    }
+                    &:last-child{
+                        input[type="number"]{
+                            width: 55px;
+                        }
+                    }
+                }
+            }
+            &.rooms{
+                label{
+                    height: 25px !important;
+                    width: 40px !important;
+                }
+            }
+            &.input--xs{
+                input{
+                    max-width: 55px;
+                }
+            }
+        }
+    }
+}

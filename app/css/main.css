@@ -8814,6 +8814,10 @@ input:focus:-ms-input-placeholder {
 .headerLine div * {
   padding: 0 3px; }
 
+.headerTitle span {
+  font-weight: 900;
+  font-size: 24px; }
+
 .object-filter {
   max-width: 300px;
   width: -webkit-max-content;
@@ -9010,6 +9014,19 @@ input:focus:-ms-input-placeholder {
             justify-content: center;
     margin: 10px 0; } }
 
+.bntFilterCheck {
+  text-align: center;
+  color: #FFFFFF;
+  background: #55B1A9;
+  border: 1px solid #55B1A9;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  font-weight: 900; }
+
 .group-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -9102,6 +9119,9 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
 
 .red {
   color: #ff0000; }
+
+.blue {
+  color: #2D9CDB; }
 
 .small--grey {
   line-height: 25px;
@@ -9272,11 +9292,35 @@ a {
 .bg-lightGreen {
   background: #dff0d8; }
 
+.title--step {
+  font-weight: 900;
+  font-size: 20px;
+  color: #000; }
+  .title--step span {
+    color: #6a6a6a;
+    font-weight: 400;
+    padding: 0 10px; }
+
+.textImportant {
+  color: #4F4F4F; }
+  .textImportant span {
+    color: #ff0000; }
+
 .wrapBTN--center {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+
+.FLX--align-items-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .wrapBTN--SB {
   display: -webkit-box;
@@ -9399,6 +9443,27 @@ a {
   .wrapTableObject:hover {
     -webkit-box-shadow: 0 0  10px #E4E6E9;
             box-shadow: 0 0  10px #E4E6E9; }
+
+.rowSelectHomeAdress {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .rowSelectHomeAdress > * {
+    width: 75px; }
+
+.maps {
+  height: 60vh; }
+  .maps > * {
+    height: 100%;
+    width: 100%; }
+
+.wrapTable--stap {
+  max-width: 333px; }
 
 .slick-slider {
   position: relative;
@@ -10076,6 +10141,22 @@ a {
       margin: 0 0 3px 0; }
       .tableObject--reqvest tbody tr td:nth-child(3) a i {
         margin: 0 auto; }
+
+.table-stap {
+  table-layout: fixed;
+  padding: 0;
+  border-top: none;
+  vertical-align: middle;
+  width: 100%; }
+  .table-stap tbody tr td:first-child {
+    width: 150px; }
+  .table-stap tbody tr.ynitaz td:last-child input[type="number"] {
+    width: 55px; }
+  .table-stap tbody tr.rooms label {
+    height: 25px !important;
+    width: 40px !important; }
+  .table-stap tbody tr.input--xs input {
+    max-width: 55px; }
 
 .xsColumn {
   margin: 5px 0 0 0; }
