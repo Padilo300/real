@@ -242,13 +242,13 @@
                                 <td>
                                     <div class="form-group formFilter-row rowSelectHomeAdress">
                                             <div class="form-group">
-                                                <input type="number" class="form-control"  aria-describedby="emailHelp" placeholder="">
+                                                <input type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Общая">
                                             </div>
                                             <div class="form-group">
-                                                <input type="number" class="form-control"  aria-describedby="emailHelp" placeholder="">
+                                                <input type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Жилая">
                                             </div>
                                             <div class="form-group">
-                                                <input type="number" class="form-control"  aria-describedby="emailHelp" placeholder="">
+                                                <input type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Кухня">
                                             </div class="form-group formFilter-row rowSelectHomeAdress">
                                     </div><!--  -->
                                 </td>
@@ -533,7 +533,7 @@
             </div><!-- col -->
         </div><!-- end row -->
         <div class="row">
-            <div class="col col-12 col-md-12 col-xl-4">
+            <div class="col col-12 col-md-6 col-xl-6">
                 <div class="wrap FLX--align-items-center">
                     <p class="title--step">
                         Цена и условия продажи
@@ -554,15 +554,66 @@
                                 </span>
                             </td>
                             <td>
-                                <div class="wrapBTN--center">
+                                <div class="wrapBTN--SB">
                                     <div class="form-group">
                                         <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
                                     </div>
                                     <div class="form-group formFilter-row">
+                                        <select class="selectСurrency form-control" id="exampleCity">
+                                            <option value="Днепропетровкая область">USD</option>
+                                            <option value="Днепропетровкая область">UAH</option>
+                                            <option value="Днепропетровкая область">EUR</option>
+                                        </select>
+                                    </div><!-- form group -->
+                                </div><!-- .wrapBTN--center -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textImportant">
+                                <b> 
+                                    Условия продажи
+                                </b>
+                                <span>
+                                    *
+                                </span>
+                            </td>
+                            <td>
+                                <div class="wrapBTN--center">
+                                    <div class="form-group formFilter-row">
                                         <select class="form-control" id="exampleCity">
-                                            <option value="Днепропетровкая область">Совмещенный</option>
-                                            <option value="Днепропетровкая область">Раздельный</option>
-                                            <option value="Днепропетровкая область">На улице</option>
+                                            <option value="Днепропетровкая область">Цена от застройщика</option>
+                                        </select>
+                                    </div><!-- form group -->
+                                </div><!-- .wrapBTN--center -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textImportant">
+                                <b> 
+                                    Возможен обмен
+                                </b>
+                            </td>
+                            <td>
+                                <div class="wrapBTN--center">
+                                    <div class="form-group formFilter-row">
+                                        <select class="form-control" id="exampleCity">
+                                            <option value="Днепропетровкая область">Да</option>
+                                        </select>
+                                    </div><!-- form group -->
+                                </div><!-- .wrapBTN--center -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textImportant">
+                                <b> 
+                                    Возможен обмен
+                                </b>
+                            </td>
+                            <td>
+                                <div class="wrapBTN--center">
+                                    <div class="form-group formFilter-row">
+                                        <select class="form-control" id="exampleCity">
+                                            <option value="Днепропетровкая область">От представителя собственника</option>
                                         </select>
                                     </div><!-- form group -->
                                 </div><!-- .wrapBTN--center -->
@@ -570,6 +621,37 @@
                         </tr>
                     </table>
                 </div><!-- wrap -->
+            </div><!-- col -->
+            <div class="col col-12 col-md-6 col-xl-6">
+                <div class="wrap FLX--align-items-center">
+                    <p class="title--step">
+                        Контактные данные
+                        <span>
+                            шаг 4 из 7
+                        </span>
+                    </p>
+                </div>
+                <div class="wrapTable--stap">
+                    <table class="table-stap">
+                        <tbody>
+                            <tr>
+                                <td class="textImportant">
+                                    <b> 
+                                        ФИО
+                                    </b>
+                                    <span>
+                                        *
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="form-group formFilter-row">
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="№11">
+                                    </div><!-- form group -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div><!-- col -->
         </div><!-- row -->
         <div class="row">

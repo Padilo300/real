@@ -9014,7 +9014,7 @@ input:focus:-ms-input-placeholder {
             justify-content: center;
     margin: 10px 0; } }
 
-.bntFilterCheck {
+.bntFilterCheck, .btnAddobjact--m, .btnAddobjactM, .btnAddobjactM--red {
   text-align: center;
   color: #FFFFFF;
   background: #55B1A9;
@@ -9025,7 +9025,42 @@ input:focus:-ms-input-placeholder {
           border-radius: 4px;
   width: 100%;
   height: 40px;
-  font-weight: 900; }
+  font-weight: 900;
+  cursor: pointer; }
+
+.btnAddobjact--m {
+  white-space: nowrap;
+  height: 28px;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content; }
+
+.btnAddobjactM {
+  white-space: nowrap;
+  height: 31px;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: 160px; }
+
+.btnAddobjactM--red {
+  white-space: nowrap;
+  height: 31px;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: 160px;
+  background: #CF5C3A;
+  border: 1px solid #CF5C3A; }
 
 .group-btn {
   display: -webkit-box;
@@ -9106,6 +9141,63 @@ input:focus:-ms-input-placeholder {
 
 .selectResponsible {
   width: 160px; }
+
+.selectСurrency {
+  width: 65px; }
+
+/* CASTOM INPUT RADIO */
+.castomRadio {
+  /* Hide the browser's default radio button */
+  /* Create a custom radio button */
+  /* On mouse-over, add a grey background color */
+  /* When the radio button is checked, add a blue background */
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  /* Show the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */ }
+  .castomRadio .containerRadio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .castomRadio .containerRadio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+  .castomRadio .checkmark {
+    position: absolute;
+    top: 4px;
+    left: 15px;
+    height: 12px;
+    width: 12px;
+    background-color: transparent;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #ccc; }
+  .castomRadio .containerRadio:hover input ~ .checkmark {
+    background-color: #ccc; }
+  .castomRadio .containerRadio input:checked ~ .checkmark {
+    background-color: #2196F3; }
+  .castomRadio .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none; }
+  .castomRadio .containerRadio input:checked ~ .checkmark:after {
+    display: block; }
+  .castomRadio .containerRadio .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 4px;
+    height: 4px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background: white; }
 
 html body h1, html body h2, html body h3, html body h4, html body h5, html body h6 {
   color: #4F4F4F; }
@@ -9305,6 +9397,33 @@ a {
   color: #4F4F4F; }
   .textImportant span {
     color: #ff0000; }
+
+.modalSelectObjact .modal-header {
+  border-bottom: none; }
+  .modalSelectObjact .modal-header .modal-title {
+    font-size: 18px;
+    text-align: center;
+    display: inline;
+    width: 100%; }
+
+.modalSelectObjact .modal-body table {
+  width: 240px;
+  margin: 0 auto; }
+  .modalSelectObjact .modal-body table tr td label {
+    color: #4F4F4F;
+    font-size: 14px;
+    height: 24px; }
+
+.modalSelectObjact .modal-footer {
+  border-top: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .wrapBTN--center {
   display: -webkit-box;

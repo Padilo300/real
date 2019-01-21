@@ -1,0 +1,31 @@
+.modalSelectObjact{
+    .modal-header{
+        border-bottom: none;
+        .modal-title{
+            font-size: 18px;
+            text-align: center;
+            display: inline;
+            width: 100%;
+        }
+    }
+    .modal-body{
+        table{
+            width: 240px;
+            margin: 0 auto;
+            tr{
+                td{
+                    label{
+                        color: #4F4F4F;
+                        font-size: 14px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+    }
+    .modal-footer{
+        border-top: none;
+        display: flex;
+        justify-content: center;
+    }
+}
