@@ -112,3 +112,16 @@ body::-webkit-scrollbar-thumb {
 .heigh100vh{
     min-height: 80vh;
 }
+.lgMargin--0auto{
+    @media screen and (max-width: 1199px){
+        margin: 10px auto !important; 
+    }
+}
+.castom-width-1{
+    @media screen and (max-width: 1231px) {
+        max-width: 74% ;
+    }
+    @media screen and (max-width: 1185px){
+        max-width: inherit;
+    }
+}

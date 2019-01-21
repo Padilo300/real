@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#9CC2CE"> <!-- цвет вкладки chrome -->
-    <link rel="shortcut icon" href="img/ico/triangle.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/ico/triangle.png" type="image/x-icon">
     <title>Padilo</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body><!-- 
         <i class="sprite sprite-Server-2"></i>
@@ -16,11 +16,12 @@
         <i class="sprite sprite-map-pin"></i>
         <i class="sprite sprite-square"></i>
         <i class="sprite sprite-star"></i> -->
+    <div class="rootWrap">
 
     <section class="container-fluid">
         <div class="row">
-            <div class="col col-12 col-md-3">
-                <div class="wrapBTN--SB btnFilterTab nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <div class="col col-12 col-md-12 col-xl-3">
+                <div class="wrapBTN--SB btnFilterTab nav nav-pills mb-3 ins-col-xl-12 lgMargin--0auto" id="pills-tab" role="tablist">
                     <button class="btn-img active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
                         <i class="sprite sprite-Group-2"></i>
                         Список
@@ -37,35 +38,27 @@
                 </div><!-- wrapBTN--center -->
                 
             </div><!-- col -->
-            <div class="col col-md-9 col-12">
+            <div class="col col-md-12 col-12 col-xl-8 offset-xl-1">
                     <div class="wrapBTN--SB xsColumn">
-
                         <div class="wrapBTN--center">
-
                             <select class="form-control select-normal m03px">
                                 <option value="Днепропетровкая область">Днепропетровкая область</option>
                                 <option value="Днепропетровкая область">Днепропетровкая область</option>
                                 <option value="Днепропетровкая область">Днепропетровкая область</option>
                                 <option value="Днепропетровкая область">Днепропетровкая область</option>
                             </select>
-        
-        
                             <select class="form-control select-normal m03px">
                                 <option value="">За последний месяц</option>
                                 <option value="">За последний месяц</option>
                                 <option value="">За последний месяц</option>
                                 <option value="">За последний месяц</option>
                             </select>
-        
                             <select class="form-control select-normal m03px">
                                 <option value="">Сначала новые</option>
                                 <option value="">Сначала старые</option>
-                                <option value="">Сначала похуй</option>
+                                <option value="">Сначала с конца</option>
                             </select>
-                            
                         </div><!-- wrapBTN--center -->
-                        
-
                         <nav aria-label="breadcrumb" class="float-right">
                             <ol class="breadcrumb bg-none ">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -76,11 +69,9 @@
             </div><!-- col -->
         </div><!-- end row -->
         <div class="row">
-            <div class="col col-12 col-md-3">
-                <form action="#" method="POST" class="formFilter">
-
-                    <div class="btn-group wrapBTN--SB btn-group-toggle formFilter-row1 formFilter-row" data-toggle="buttons">
-
+            <div class="col col-lg-4 col-xl-3 col-12 col-md-12 ins-col-xl-12 object-filter">
+                <form action="#" method="POST" cla1ss="formFilter ">
+                    <div class="wrap btn-group wrapBTN--SB btn-group-toggle formFilter-row1 formFilter-row" data-toggle="buttons">
                         <label class="btn btn-secondary active INS-btn-toogle">
                             <input type="radio" name="options" id="option1" autocomplete="off" checked> Все
                         </label>
@@ -136,37 +127,37 @@
                                 <input type="text" class="form-control" id="input1">
                             </div><!-- form group -->
 
-                            <div class="wrapBTN--SB ">
-                                <b class="gray w-50">Количество комнат</b>
-                                <b class="gray w-50">Площадь, м<sup>2</sup></b>
-                            </div>
-
-                            <div class="wrapBTN--SB wrapInputBtn"><!-- wrap flex -->
-                                
-                                <div class="wrapBTN--center"><!-- inner flex -->
-                                    <div class="btn-group btn-group-toggle " data-toggle="buttons">
-                                        <label class="btn btn-secondary active INS-btn-toogle--xs">
-                                            <input type="radio" name="options" id="option1" autocomplete="off" checked> 1
-                                        </label>
-                                        <label class="btn btn-secondary INS-btn-toogle--xs">
-                                            <input type="radio" name="options" id="option2" autocomplete="off"> 2
-                                        </label>
-                                        <label class="btn btn-secondary INS-btn-toogle--xs">
-                                            <input type="radio" name="options" id="option3" autocomplete="off"> 3
-                                        </label>
-                                        <label class="btn btn-secondary INS-btn-toogle--xs">
-                                            <input type="radio" name="options" id="option3" autocomplete="off"> 4+
-                                        </label>
-                                    </div>
-                                </div>  <!-- inner flex -->
-                                <div class="wrapBTN--fend">   <!-- inner flex -->
-                                    <input type="number" class="w-50" name="" id="" placeholder="от" step="10">
-                                    <input type="number" class="w-50" name="" id="" placeholder="до" step="10">
-                                </div><!-- inner flex -->
-                            </div><!-- wrap flex -->
+                            <div class="form-group">
+                                <div class="wrapBTN--SB ">
+                                    <b class="gray w-50">Количество комнат</b>
+                                    <b class="gray w-50">Площадь, м<sup>2</sup></b>
+                                </div>
+    
+                                <div class="wrapBTN--SB wrapInputBtn"><!-- wrap flex -->
+                                    
+                                    <div class="wrapBTN--center"><!-- inner flex -->
+                                        <div class="btn-group btn-group-toggle row-rooms " data-toggle="buttons">
+                                            <label class="btn btn-secondary active INS-btn-toogle--xs">
+                                                <input type="radio" name="options" id="option1" autocomplete="off" checked> 1
+                                            </label>
+                                            <label class="btn btn-secondary INS-btn-toogle--xs">
+                                                <input type="radio" name="options" id="option2" autocomplete="off"> 2
+                                            </label>
+                                            <label class="btn btn-secondary INS-btn-toogle--xs">
+                                                <input type="radio" name="options" id="option3" autocomplete="off"> 3
+                                            </label>
+                                            <label class="btn btn-secondary INS-btn-toogle--xs">
+                                                <input type="radio" name="options" id="option3" autocomplete="off"> 4+
+                                            </label>
+                                        </div>
+                                    </div>  <!-- inner flex -->
+                                    <div class="wrapBTN--fend row-square">   <!-- inner flex -->
+                                        <input type="number" class="w-50" name="" id="" placeholder="от" step="10">
+                                        <input type="number" class="w-50" name="" id="" placeholder="до" step="10">
+                                    </div><!-- inner flex -->
+                                </div><!-- wrap flex -->
+                            </div><!-- form-group -->
                     </div><!-- formFilter-row -->
-                    
-
                     
                     <div class="formFilter-row">
                         <div class="wrapBTN--SB wrap">
@@ -207,7 +198,7 @@
                         </div>
     
                         <div class="wrapBTN--SB">
-                            <div class="wrapBTN--SB w-50">   <!-- inner flex -->
+                            <div class="wrapBTN--SB row-level">   <!-- inner flex -->
                                 <input type="number" class="w-50" name="" id="" placeholder="от" step="10">
                                 <input type="number" class="w-50" name="" id="" placeholder="до" step="10">
                             </div><!-- inner flex -->
@@ -227,12 +218,12 @@
                     </div><!-- formFilter-row -->
                 </form>
             </div><!-- col -->
-            <div class="col col-md-9 col-12 wrap tab-content" id="pills-tabContent">
+            <div class="col col-lg-12 col-xl-8 col-md-12 col-12 wrap tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <div class="wrapAppartament">
                         <div class="row position-relative">
                             <div class="col col-md-3 col-12">
-                                <div class="wrapAppartament-img">
+                                <div class="wrapAppartament-img wrap">
                                     <div class="wrapAppartament-btnGrop">
                                         <a href="#">
                                             <input type="checkbox" name="" id="">
@@ -250,10 +241,12 @@
                                 </div><!-- wrapImgAppartament -->
                             </div><!-- col-3 -->
                             <div class="col col-12 col-md-7 position-relative wrap">
-                                <h1 class="h3 titleAppart">
-                                    Героев Сталинграда просп., 4А, Оболонский р-н, 
-                                    г. Киев
-                                </h1>
+                                <a href="/2.html" class="hrefObject">
+                                    <h1 class="h3 titleAppart">
+                                        Героев Сталинграда просп., 4А, Оболонский р-н, 
+                                        г. Киев
+                                    </h1>
+                                </a>
                                 <p class="h4 wrapAppartParametr">
                                     <span>
                                         2 разд
@@ -297,7 +290,7 @@
                     <div class="wrapAppartament">
                         <div class="row position-relative">
                             <div class="col col-md-3 col-12">
-                                <div class="wrapAppartament-img">
+                                <div class="wrapAppartament-img wrap">
                                     <div class="wrapAppartament-btnGrop">
                                         <a href="#">
                                             <input type="checkbox" name="" id="">
@@ -315,10 +308,89 @@
                                 </div><!-- wrapImgAppartament -->
                             </div><!-- col-3 -->
                             <div class="col col-12 col-md-7 position-relative wrap">
-                                <h1 class="h3 titleAppart">
-                                    Героев Сталинграда просп., 4А, Оболонский р-н, 
-                                    г. Киев
-                                </h1>
+                                    <a href="/2.html" class="hrefObject">
+                                        <h1 class="h3 titleAppart">
+                                            Героев Сталинграда просп., 4А, Оболонский р-н, 
+                                            г. Киев
+                                        </h1>
+                                    </a>
+                                <p class="h4 wrapAppartParametr">
+                                    <span>
+                                        2 разд
+                                    </span>
+
+                                    <span>
+                                        50 / 35 / 15 м<sup>2</sup>
+                                    </span>
+
+                                    <span>
+                                        4 этаж из 11
+                                    </span>
+                                </p>
+                                <p class="descriptionAppart">
+                                    Светлая двухкомнатная квартира с авторским ремонтом. 4 этаж 25 этажного кирпичного дома. Общая площадь 50 м2. Квартира с функциональной планировкой комнат, полностью укомплектована всей необходимой ...
+                                </p>
+                            
+                            </div><!-- col-9 -->
+                            <footer class="absolute-bottom">
+                                <p>
+                                    <b> 
+                                        Обновленно: 18.12.2018
+                                    </b>
+                                    <a href="#">
+                                        Святослав Райский
+                                    </a>
+                                </p>
+                            </footer>
+                            <div class="col col-md-2 col-12">
+                                <p class="appartPrice">
+                                    <b class="h2">
+                                        99 000$
+                                    </b>
+                                    <span>
+                                        1 200$ за м<sup>2</sup>
+                                    </span>
+                                </p>
+                                <p class="appartPrice">
+                                    <b class="h2">
+                                        <small> 
+                                            2 777 242 грн
+                                        </small>
+                                    </b>
+                                    <span>
+                                        32 000 грн. за м<sup>2</sup>
+                                    </span>
+                                </p>
+                            </div>
+                        </div><!-- row -->
+                    </div><!-- wrapAppartament -->
+                    <div class="wrapAppartament">
+                        <div class="row position-relative">
+                            <div class="col col-md-3 col-12">
+                                <div class="wrapAppartament-img wrap">
+                                    <div class="wrapAppartament-btnGrop">
+                                        <a href="#">
+                                            <input type="checkbox" name="" id="">
+                                        </a>
+                                        <a href="#">
+                                            <i class="sprite sprite-menu"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="sprite sprite-star"></i>
+                                        </a>
+                                    </div>
+                                    <div class="img">
+                                        <img src="http://kitchenguide.su/wp-content/uploads/2017/03/ii37.jpg" alt="">
+                                    </div>
+                                </div><!-- wrapImgAppartament -->
+                            </div><!-- col-3 -->
+                            <div class="col col-12 col-md-7 position-relative wrap">
+                                    <a href="/2.html" class="hrefObject">
+                                        <h1 class="h3 titleAppart">
+                                            Героев Сталинграда просп., 4А, Оболонский р-н, 
+                                            г. Киев
+                                        </h1>
+                                    </a>
                                 <p class="h4 wrapAppartParametr">
                                     <span>
                                         2 разд
@@ -362,7 +434,7 @@
                     <div class="wrapAppartament">
                         <div class="row position-relative">
                             <div class="col col-md-3 col-12">
-                                <div class="wrapAppartament-img">
+                                <div class="wrapAppartament-img wrap">
                                     <div class="wrapAppartament-btnGrop">
                                         <a href="#">
                                             <input type="checkbox" name="" id="">
@@ -380,75 +452,12 @@
                                 </div><!-- wrapImgAppartament -->
                             </div><!-- col-3 -->
                             <div class="col col-12 col-md-7 position-relative wrap">
-                                <h1 class="h3 titleAppart">
-                                    Героев Сталинграда просп., 4А, Оболонский р-н, 
-                                    г. Киев
-                                </h1>
-                                <p class="h4 wrapAppartParametr">
-                                    <span>
-                                        2 разд
-                                    </span>
-
-                                    <span>
-                                        50 / 35 / 15 м<sup>2</sup>
-                                    </span>
-
-                                    <span>
-                                        4 этаж из 11
-                                    </span>
-                                </p>
-                                <p class="descriptionAppart">
-                                    Светлая двухкомнатная квартира с авторским ремонтом. 4 этаж 25 этажного кирпичного дома. Общая площадь 50 м2. Квартира с функциональной планировкой комнат, полностью укомплектована всей необходимой ...
-                                </p>
-                            
-                            </div><!-- col-9 -->
-                            <footer class="absolute-bottom">
-                                <p>
-                                    <b> 
-                                        Обновленно: 18.12.2018
-                                    </b>
-                                    <a href="#">
-                                        Святослав Райский
+                                    <a href="/2.html" class="hrefObject">
+                                        <h1 class="h3 titleAppart">
+                                            Героев Сталинграда просп., 4А, Оболонский р-н, 
+                                            г. Киев
+                                        </h1>
                                     </a>
-                                </p>
-                            </footer>
-                            <div class="col col-md-2 col-12">
-                                <p class="appartPrice">
-                                    <b class="h2">
-                                        99 000$
-                                    </b>
-                                    <span>
-                                        1 200$ за м<sup>2</sup>
-                                    </span>
-                                </p>
-                            </div>
-                        </div><!-- row -->
-                    </div><!-- wrapAppartament -->
-                    <div class="wrapAppartament">
-                        <div class="row position-relative">
-                            <div class="col col-md-3 col-12">
-                                <div class="wrapAppartament-img">
-                                    <div class="wrapAppartament-btnGrop">
-                                        <a href="#">
-                                            <input type="checkbox" name="" id="">
-                                        </a>
-                                        <a href="#">
-                                            <i class="sprite sprite-menu"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="sprite sprite-star"></i>
-                                        </a>
-                                    </div>
-                                    <div class="img">
-                                        <img src="http://kitchenguide.su/wp-content/uploads/2017/03/ii37.jpg" alt="">
-                                    </div>
-                                </div><!-- wrapImgAppartament -->
-                            </div><!-- col-3 -->
-                            <div class="col col-12 col-md-7 position-relative wrap">
-                                <h1 class="h3 titleAppart">
-                                    Героев Сталинграда просп., 4А, Оболонский р-н, 
-                                    г. Киев
-                                </h1>
                                 <p class="h4 wrapAppartParametr">
                                     <span>
                                         2 разд
@@ -984,6 +993,7 @@
             </div><!-- col -->
         </div><!-- row -->
     </section><!-- end cont -->
+    </div>
     <script src="/js/libs/jquery-3.3.1.min.js"   ></script>
     <script src="/js/libs/bootstrap.min.js"     defer ></script>
     <script src="/js/libs/slick.min.js"         defer ></script>

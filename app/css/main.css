@@ -8737,6 +8737,18 @@ body::-webkit-scrollbar-thumb {
 .heigh100vh {
   min-height: 80vh; }
 
+@media screen and (max-width: 1199px) {
+  .lgMargin--0auto {
+    margin: 10px auto !important; } }
+
+@media screen and (max-width: 1231px) {
+  .castom-width-1 {
+    max-width: 74%; } }
+
+@media screen and (max-width: 1185px) {
+  .castom-width-1 {
+    max-width: inherit; } }
+
 /* сдвиг placeholder-а вправо при фокусе*/
 input::-webkit-input-placeholder {
   text-indent: 0px;
@@ -8820,7 +8832,7 @@ input:focus:-ms-input-placeholder {
   width: -moz-max-content;
   width: max-content;
   margin: 0 auto  0 0; }
-  @media screen and (min-width: 500px) and (max-width: 1200px) {
+  @media screen and (min-width: 500px) and (max-width: 1199px) {
     .object-filter {
       margin: 0 auto; } }
   @media screen and (max-width: 500px) {
@@ -8942,7 +8954,7 @@ input:focus:-ms-input-placeholder {
   width: 35px !important; }
 
 .btnFilterTab {
-  font-size: 1.1em;
+  font-size: 1em;
   max-width: 280px;
   margin: 0 auto 0 0; }
 
@@ -9317,6 +9329,8 @@ a {
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between; }
+      .wrapAppartament footer > p .number {
+        color: #2d9cdb; }
       .wrapAppartament footer > p * {
         margin: 0 15px;
         white-space: nowrap; }
@@ -9328,6 +9342,24 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  .wrapAppartament-img .img {
+    margin: 0 -15px 0 0;
+    position: relative; }
+    .wrapAppartament-img .img .label {
+      min-width: 40px;
+      max-width: -webkit-max-content;
+      max-width: -moz-max-content;
+      max-width: max-content;
+      padding: 0 5px;
+      color: #fff;
+      -webkit-border-radius: 4px;
+              border-radius: 4px;
+      height: 16px;
+      background: #5CB85C;
+      position: absolute;
+      right: -5px;
+      line-height: 16px;
+      top: 10px; }
 
 .wrapAppartament-btnGrop {
   display: -webkit-box;
@@ -9344,6 +9376,14 @@ a {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  .wrapAppartament-btnGrop .number {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 10px;
+    color: #000000a3; }
+  .wrapAppartament-btnGrop .numberPlus {
+    font-size: 10px;
+    color: #5CB85C; }
 
 @media screen and (min-width: 767px) {
   .wrapTabs {
@@ -9868,11 +9908,19 @@ a {
     @media screen and (max-width: 767px) {
       .INS-slider .mainIMG {
         height: auto; } }
-    .INS-slider .mainIMG > img {
-      width: 100%;
+    .INS-slider .mainIMG * {
+      min-height: 400px;
       -o-object-fit: cover;
          object-fit: cover;
       margin: 0 auto; }
+      .INS-slider .mainIMG * * {
+        min-height: 400px;
+        -o-object-fit: cover;
+           object-fit: cover;
+        margin: 0 auto; }
+    .INS-slider .mainIMG img {
+      min-height: auto;
+      max-width: 100%; }
     .INS-slider .mainIMG > .miniIMG-iteam {
       height: 100%; }
       .INS-slider .mainIMG > .miniIMG-iteam > img {
@@ -10079,7 +10127,7 @@ a {
 
 .xsColumn {
   margin: 5px 0 0 0; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     .xsColumn {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;

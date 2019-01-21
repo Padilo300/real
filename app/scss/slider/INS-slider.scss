@@ -3,15 +3,23 @@
     max-width: 600px;
     margin: 0 auto;
     .mainIMG{
-        //height: 400px;
         overflow: hidden;
         @media screen and (max-width: 767px){
             height: auto;
         }
-        > img{
-            width:  100%;
+        *{
+            min-height:  400px;
             object-fit: cover;
             margin: 0 auto;
+            *{
+                min-height:  400px;
+                object-fit: cover;
+                margin: 0 auto;
+            }
+        }
+        img{
+            min-height: auto;
+            max-width: 100%;
         }
         >.miniIMG-iteam{
             height: 100%;

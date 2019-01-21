@@ -17,6 +17,9 @@
     footer{
         width: max-content;
         >p{
+            .number{
+                color: rgb(45, 156, 219);
+            }
             max-width: 300px;
             display: flex;
             justify-content: space-between;
@@ -32,12 +35,39 @@
 }
 .wrapAppartament-img{
     display: flex;
+    .img{
+        margin: 0 -15px 0 0;
+        position: relative;
+        .label{
+            min-width: 40px;
+            max-width: max-content;
+            padding: 0 5px;
+            color: #fff;
+            border-radius: 4px;
+            height: 16px;
+            background: #5CB85C;
+            position: absolute;
+            right: -5px;
+            line-height: 16px;
+            top: 10px;
+        }
+    }
 }
 .wrapAppartament-btnGrop{
     display: flex;
     flex-direction: column;
     height: 60px;
     justify-content: space-between;
+    .number{
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 10px;
+        color: #000000a3;
+    }
+    .numberPlus{
+        font-size: 10px;
+        color: #5CB85C;
+    }
 }
 .wrapTabs{
     @media screen and (min-width: 767px){
