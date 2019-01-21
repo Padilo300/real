@@ -172,8 +172,20 @@
         width: 100%;
     }
 }
-.wrapTable--stap{
+html body .wrapTable--stap{
     max-width: 333px;
+    .form-control{
+        border-radius: 0;
+    }
+    .row-rooms{
+        flex: 1;
+        > label.INS-btn-toogle--xs{
+            height: 29px !important;
+        }
+    }
+    .form-group{
+        margin: 1px 0;
+    }
 }
 .wrapPrice{
     @media screen and (max-width: 575px){

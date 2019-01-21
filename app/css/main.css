@@ -9142,11 +9142,12 @@ input:focus:-ms-input-placeholder {
     letter-spacing: 1px; }
 
 .formFilter .formFilter-row {
-  margin: 10px 0; }
+  margin: 0; }
 
 .formFilter label {
   color: #545b62;
-  font-size: 12px; }
+  font-size: 12px;
+  margin: 4px 0 1px 0; }
 
 .selectObjeckFilter {
   width: 143px; }
@@ -9677,8 +9678,20 @@ a {
     height: 100%;
     width: 100%; }
 
-.wrapTable--stap {
+html body .wrapTable--stap {
   max-width: 333px; }
+  html body .wrapTable--stap .form-control {
+    -webkit-border-radius: 0;
+            border-radius: 0; }
+  html body .wrapTable--stap .row-rooms {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+    html body .wrapTable--stap .row-rooms > label.INS-btn-toogle--xs {
+      height: 29px !important; }
+  html body .wrapTable--stap .form-group {
+    margin: 1px 0; }
 
 @media screen and (max-width: 575px) {
   .wrapPrice {
@@ -10388,8 +10401,8 @@ a {
   .table-stap tbody tr.rooms label {
     height: 25px !important;
     width: 40px !important; }
-  .table-stap tbody tr.input--xs input {
-    max-width: 55px; }
+  .table-stap tbody tr.input--xs input, .table-stap tbody tr.input--xs select {
+    max-width: 72px; }
 
 .xsColumn {
   margin: 5px 0 0 0; }
