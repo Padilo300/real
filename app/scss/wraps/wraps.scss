@@ -21,10 +21,11 @@
     footer{
         width: max-content;
         >p{
+            margin: -15px 0 0 0;
             .number{
                 color: rgb(45, 156, 219);
             }
-            max-width: 300px;
+            //max-width: 300px;
             display: flex;
             justify-content: space-between;
             *{
@@ -42,25 +43,51 @@
     .img{
         margin: 0 -15px 0 0;
         position: relative;
-        .label{
-            min-width: 40px;
-            max-width: max-content;
-            padding: 0 5px;
-            color: #fff;
-            border-radius: 4px;
-            height: 16px;
-            background: #5CB85C;
-            position: absolute;
+        .label-wrap{
             right: -5px;
-            line-height: 16px;
             top: 10px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            .label{
+                min-width: 57px;
+                max-width: max-content;
+                padding: 0 5px 2px 5px;
+                color: #fff;
+                border-radius: 4px;
+                background: #5CB85C;
+                line-height: 16px;
+                margin: 3px 0;
+                cursor: pointer;
+            }
+            .--blue{
+                background: #2D9CDB;
+            }
+            .--orang{
+                background:#E27836;
+                text-decoration: underline;
+            }
+
         }
+        .labelMedia{
+            position: absolute;
+            bottom: 0;
+            background: #0000005c;
+            width: 100%;
+            color: #fff;
+            font-size: 15px;
+            cursor: pointer;
+            *{
+                margin: 0 3px;
+            }
+        }
+        
     }
 }
 .wrapAppartament-btnGrop{
     display: flex;
     flex-direction: column;
-    height: 60px;
+    height: 30px;
     justify-content: space-between;
     .number{
         font-weight: bold;

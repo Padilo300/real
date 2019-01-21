@@ -9216,16 +9216,16 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
 
 /* =========================== цвета ========================= */
 .gray {
-  color: #4f4f4f91 !important; }
+  color: #55595C !important; }
 
 .green {
-  color: #219653; }
+  color: #219653 !important; }
 
 .red {
-  color: #ff0000; }
+  color: #ff0000 !important; }
 
 .blue {
-  color: #2D9CDB; }
+  color: #2D9CDB !important; }
 
 .small--grey {
   line-height: 25px;
@@ -9233,7 +9233,7 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   color: #828282; }
 
 .wrapAppartParametr {
-  max-width: 300px;
+  max-width: 400px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9242,7 +9242,14 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #4F4F4F; }
+  color: #55595C; }
+  .wrapAppartParametr * {
+    color: #55595C;
+    font-weight: 400; }
+  .wrapAppartParametr .ObCheck i {
+    color: #219653; }
+  .wrapAppartParametr .ObCheck .ObCheck-title {
+    text-decoration: underline; }
 
 .text-upper {
   text-transform: uppercase; }
@@ -9260,8 +9267,11 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
 
 .appartPrice {
   text-align: right;
-  color: #4F4F4F;
-  font-size: 1.7rem; }
+  color: #2D9CDB;
+  font-size: 1.7rem;
+  line-height: 10px;
+  position: relative;
+  top: 14px; }
   .appartPrice b {
     font-size: 1.7rem; }
   .appartPrice * {
@@ -9410,6 +9420,12 @@ a {
   .textImportant span {
     color: #ff0000; }
 
+.multiSpan > span:first-child {
+  color: #55595C; }
+
+.multiSpan * {
+  margin: 0 !important; }
+
 .modalSelectObjact .modal-header {
   border-bottom: none; }
   .modalSelectObjact .modal-header .modal-title {
@@ -9483,7 +9499,7 @@ a {
     width: -moz-max-content;
     width: max-content; }
     .wrapAppartament footer > p {
-      max-width: 300px;
+      margin: -15px 0 0 0;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -9508,21 +9524,47 @@ a {
   .wrapAppartament-img .img {
     margin: 0 -15px 0 0;
     position: relative; }
-    .wrapAppartament-img .img .label {
-      min-width: 40px;
-      max-width: -webkit-max-content;
-      max-width: -moz-max-content;
-      max-width: max-content;
-      padding: 0 5px;
-      color: #fff;
-      -webkit-border-radius: 4px;
-              border-radius: 4px;
-      height: 16px;
-      background: #5CB85C;
-      position: absolute;
+    .wrapAppartament-img .img .label-wrap {
       right: -5px;
-      line-height: 16px;
-      top: 10px; }
+      top: 10px;
+      position: absolute;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .wrapAppartament-img .img .label-wrap .label {
+        min-width: 57px;
+        max-width: -webkit-max-content;
+        max-width: -moz-max-content;
+        max-width: max-content;
+        padding: 0 5px 2px 5px;
+        color: #fff;
+        -webkit-border-radius: 4px;
+                border-radius: 4px;
+        background: #5CB85C;
+        line-height: 16px;
+        margin: 3px 0;
+        cursor: pointer; }
+      .wrapAppartament-img .img .label-wrap .--blue {
+        background: #2D9CDB; }
+      .wrapAppartament-img .img .label-wrap .--orang {
+        background: #E27836;
+        text-decoration: underline; }
+    .wrapAppartament-img .img .labelMedia {
+      position: absolute;
+      bottom: 0;
+      background: #0000005c;
+      width: 100%;
+      color: #fff;
+      font-size: 15px;
+      cursor: pointer; }
+      .wrapAppartament-img .img .labelMedia * {
+        margin: 0 3px; }
 
 .wrapAppartament-btnGrop {
   display: -webkit-box;
@@ -9534,7 +9576,7 @@ a {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 60px;
+  height: 30px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;

@@ -5,16 +5,16 @@ html body {
 }
 /* =========================== цвета ========================= */
 .gray{
-    color: #4f4f4f91 !important;
+    color: #55595C !important;
 }
 .green{
-    color: #219653
+    color: #219653 !important;
 }
 .red{
-    color: #ff0000;
+    color: #ff0000 !important;
 }
 .blue{
-    color: #2D9CDB;
+    color: #2D9CDB !important;
 }
 
 .small--grey{
@@ -23,11 +23,22 @@ html body {
     color: #828282;
 }
 .wrapAppartParametr{
-    max-width: 300px;
+    max-width: 400px;
     display: flex;
     justify-content: space-between;
-    color: $colorGray;
-    
+    color: #55595C;
+    *{
+        color: #55595C;
+        font-weight: 400;
+    }
+    .ObCheck{
+        i{
+            color: #219653;
+        }
+        .ObCheck-title{
+            text-decoration: underline;
+        }
+    }
 }
 .text-upper{
     text-transform: uppercase;
@@ -46,8 +57,11 @@ html body {
 }
 .appartPrice{
     text-align: right;
-    color: $colorGray;
+    color: #2D9CDB;
     font-size: 1.7rem;
+    line-height: 10px;
+    position: relative;
+    top: 14px;
     b{
         font-size: 1.7rem;
     }
@@ -190,5 +204,15 @@ a{
     color: #4F4F4F;
     span{
         color: #ff0000;
+    }
+}
+.multiSpan{
+    > span{
+        &:first-child{
+            color: #55595C;
+        }
+    }
+    *{
+        margin: 0 !important;
     }
 }
