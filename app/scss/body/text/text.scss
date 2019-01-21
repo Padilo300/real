@@ -53,6 +53,9 @@ html body {
     line-height: 18px;
     max-width: 500px;
     margin: 0 0 30px 0;
+    @media screen and (max-width: 575px){
+        margin: 0;
+    }
 
 }
 .appartPrice{
@@ -62,6 +65,9 @@ html body {
     line-height: 10px;
     position: relative;
     top: 14px;
+    @media screen and (max-width: 575px){
+        position: static;
+    }
     b{
         font-size: 1.7rem;
     }

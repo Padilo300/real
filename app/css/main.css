@@ -9264,6 +9264,9 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   line-height: 18px;
   max-width: 500px;
   margin: 0 0 30px 0; }
+  @media screen and (max-width: 575px) {
+    .descriptionAppart {
+      margin: 0; } }
 
 .appartPrice {
   text-align: right;
@@ -9272,6 +9275,9 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
   line-height: 10px;
   position: relative;
   top: 14px; }
+  @media screen and (max-width: 575px) {
+    .appartPrice {
+      position: static; } }
   .appartPrice b {
     font-size: 1.7rem; }
   .appartPrice * {
@@ -9499,7 +9505,7 @@ a {
     width: -moz-max-content;
     width: max-content; }
     .wrapAppartament footer > p {
-      margin: -15px 0 0 0;
+      margin: -15px 0 0 15px;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -9507,11 +9513,19 @@ a {
       -webkit-box-pack: justify;
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
-              justify-content: space-between; }
+              justify-content: space-between;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      @media screen and (max-width: 855px) {
+        .wrapAppartament footer > p {
+          margin: 10px 0 0 0;
+          -webkit-justify-content: space-around;
+              -ms-flex-pack: distribute;
+                  justify-content: space-around; } }
       .wrapAppartament footer > p .number {
         color: #2d9cdb; }
       .wrapAppartament footer > p * {
-        margin: 0 15px;
         white-space: nowrap; }
   .wrapAppartament .hrefObject {
     color: #4F4F4F; }
@@ -9665,6 +9679,16 @@ a {
 
 .wrapTable--stap {
   max-width: 333px; }
+
+@media screen and (max-width: 575px) {
+  .wrapPrice {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; } }
 
 .slick-slider {
   position: relative;

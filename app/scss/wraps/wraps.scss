@@ -21,15 +21,19 @@
     footer{
         width: max-content;
         >p{
-            margin: -15px 0 0 0;
+            margin: -15px 0 0 15px;
+            @media screen  and (max-width: 855px){
+                margin: 10px 0 0 0;
+                justify-content: space-around;
+            }
             .number{
                 color: rgb(45, 156, 219);
             }
             //max-width: 300px;
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             *{
-                margin: 0 15px;
                 white-space: nowrap;
             }
         }
@@ -170,4 +174,11 @@
 }
 .wrapTable--stap{
     max-width: 333px;
+}
+.wrapPrice{
+    @media screen and (max-width: 575px){
+        display: flex;
+        justify-content: space-around;
+
+    }
 }
