@@ -120,3 +120,46 @@ $main-btn-color: #55595C;
         margin: 10px 0  ;
     }
 }
+
+.bntFilterCheck{
+    text-align: center;
+    color: #FFFFFF;
+    background: #55B1A9;
+    border: 1px solid #55B1A9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.btnAddobjact--m{
+    @extend .bntFilterCheck;
+    white-space: nowrap;
+    height: 28px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    width: max-content;
+}
+
+.btnAddobjactM{
+    @extend .bntFilterCheck;
+    white-space: nowrap;
+    height: 31px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    width: max-content;
+    min-width: 160px;
+}
+
+.btnAddobjactM--red{
+    @extend .bntFilterCheck;
+    white-space: nowrap;
+    height: 31px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    width: max-content;
+    min-width: 160px;
+    background: #CF5C3A;
+    border: 1px solid #CF5C3A;
+}

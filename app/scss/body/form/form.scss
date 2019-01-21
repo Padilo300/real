@@ -48,3 +48,76 @@
 .selectResponsible{
     width: 160px;
 }
+.selectСurrency{
+    width: 65px;
+}
+
+/* CASTOM INPUT RADIO */
+
+.castomRadio{
+.containerRadio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .containerRadio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 4px;
+    left: 15px;
+    height: 12px;
+    width: 12px;
+    background-color: transparent;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .containerRadio:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .containerRadio input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .containerRadio input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .containerRadio .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: white;
+  }
+}

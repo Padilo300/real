@@ -13,6 +13,9 @@ html body {
 .red{
     color: #ff0000;
 }
+.blue{
+    color: #2D9CDB;
+}
 
 .small--grey{
     line-height: 25px;
@@ -171,4 +174,21 @@ a{
 
 .bg-lightGreen{
     background: rgba(223, 240, 216, 1);
+}
+
+.title--step{
+    font-weight: 900;
+    font-size: 20px;
+    color: #000;
+    span{
+        color: #6a6a6a;
+        font-weight: 400;
+        padding: 0 10px;
+    }
+}
+.textImportant{
+    color: #4F4F4F;
+    span{
+        color: #ff0000;
+    }
 }

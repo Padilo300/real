@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#9CC2CE"> <!-- цвет вкладки chrome -->
+    <link rel="shortcut icon" href="img/ico/triangle.png" type="image/x-icon">
+    <title>Padilo</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="rootWrap">
+
+    <section class="container-fluid">
+        <div class="row border-b">
+            <div class="col col-12 col-md-12 col-xl-9">
+              <p class="headerTitle">
+                  <span>
+                        Добавление квартиры в базу объектов <span class="blue">47%</span>  
+                  </span>
+                  (заполнено информации)
+              </p>
+            </div><!-- col -->
+            <div class="col col-md-12 col-12 col-xl-3">
+                <div class="wrapBTN--fend xsColumn">
+                    <nav aria-label="breadcrumb" class="float-right">
+                        <ol class="breadcrumb bg-none margin-none">
+                            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Обьекты</li>
+                        </ol>
+                    </nav>
+                </div><!-- wrapBTN--center -->
+            </div><!-- col -->
+        </div><!-- end row -->
+        <div class="row">
+                <div class="col col-12 col-md-12 col-xl-12 ">
+                    <div class="wrap FLX--align-items-center">
+                        <p class="title--step">
+                            Место положение объекта
+                            <span>
+                                шаг 1 из 7
+                            </span>
+                        </p>
+                        <div class="alert alert-success" role="alert">
+                            Дубликаты не обнаружены. Можете добавлять объект в базу
+                        </div>
+                    </div>
+                </div><!-- col -->
+            </div><!-- end row -->
+        <div class="row">
+            <div class="col col-lg-4 col-xl-3 col-12 col-md-12 ins-col-xl-12 object-filter">
+                <form action="#" method="POST" class="formFilter">
+                    <div class="form-group formFilter-row">
+                        <label for="exampleCity">
+                            <b class="blue">
+                                Жилой комплекс
+                            </b>
+                        </label>
+                        <select class="form-control" id="exampleCity">
+                            <option value="Днепропетровкая область">ЖК "Лайт Хаус"</option>
+                            <option value="Днепропетровкая область">ЖК "Лайт Хаус"</option>
+                            <option value="Днепропетровкая область">ЖК "Лайт Хаус"</option>
+                            <option value="Днепропетровкая область">ЖК "Лайт Хаус"</option>
+                        </select>
+                    </div><!-- form group -->
+                    <div class="form-group formFilter-row">
+                        <label for="exampleCity">
+                            <b class="textImportant">
+                                Область
+                                <span>
+                                    *
+                                </span>
+                            </b>
+                        </label>
+                        <select class="form-control" id="exampleCity">
+                            <option value="Днепропетровкая область">Днепропетровкая область</option>
+                            <option value="Днепропетровкая область">Днепропетровкая область</option>
+                            <option value="Днепропетровкая область">Днепропетровкая область</option>
+                            <option value="Днепропетровкая область">Днепропетровкая область</option>
+                        </select>
+                    </div><!-- form group -->
+                    <div class="form-group formFilter-row">
+                        <label for="exampleCity">
+                            <b class="textImportant">
+                                Населенный пункт
+                                <span>
+                                    *
+                                </span>
+                            </b>
+                        </label>
+                        <select class="form-control" id="exampleCity">
+                            <option value="Днепропетровкая область">г. Днепр</option>
+                            <option value="Днепропетровкая область">г. Днепр</option>
+                            <option value="Днепропетровкая область">г. Днепр</option>
+                            <option value="Днепропетровкая область">г. Днепр</option>
+                        </select>
+                    </div><!-- form group -->
+                    <div class="form-group formFilter-row">
+                        <label for="exampleCity">
+                            <b class="textImportant">
+                                Административный район
+                                <span>
+                                    *
+                                </span>
+                            </b>
+                        </label>
+                        <select class="form-control" id="exampleCity">
+                            <option value="Днепропетровкая область">Чечеловский</option>
+                            <option value="Днепропетровкая область">Чечеловский</option>
+                            <option value="Днепропетровкая область">Чечеловский</option>
+                            <option value="Днепропетровкая область">Чечеловский</option>
+                        </select>
+                    </div><!-- form group -->
+                    <div class="form-group formFilter-row">
+                        <label for="exampleCity">
+                            <b class="textImportant">
+                                Микрорайон
+                                <span>
+                                    *
+                                </span>
+                            </b>
+                        </label>
+                        <select class="form-control" id="exampleCity">
+                            <option value="Днепропетровкая область">12 квартал</option>
+                            <option value="Днепропетровкая область">12 квартал</option>
+                            <option value="Днепропетровкая область">12 квартал</option>
+                            <option value="Днепропетровкая область">12 квартал</option>
+                        </select>
+                    </div><!-- form group -->
+                    <div class="form-group formFilter-row">
+                        <label for="exampleCity">
+                            <b class="textImportant">
+                                Улица
+                                <span>
+                                    *
+                                </span>
+                            </b>
+                        </label>
+                        <select class="form-control" id="exampleCity">
+                            <option value="Днепропетровкая область">ул. Чичерина</option>
+                            <option value="Днепропетровкая область">ул. Чичерина</option>
+                            <option value="Днепропетровкая область">ул. Чичерина</option>
+                            <option value="Днепропетровкая область">ул. Чичерина</option>
+                        </select>
+                    </div><!-- form group -->
+
+                    <div class="form-group formFilter-row rowSelectHomeAdress">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">
+                                <b class="textImportant">
+                                    Дом
+                                </b>
+                            </label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="№11">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">
+                                <b class="textImportant">
+                                    Секция
+                                </b>
+                            </label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="3">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">
+                                <b class="textImportant">
+                                    Квартира
+                                </b>
+                            </label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="69">
+                        </div class="form-group formFilter-row rowSelectHomeAdress">
+
+                    </div><!--  -->
+
+                    <button class="bntFilterCheck">
+                        Проверить
+                    </button>
+                </form>
+            </div><!-- col -->
+            <div class="col col-lg-12 col-xl-9 col-md-12 col-12 wrap tab-content" id="pills-tabContent">
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d10599.569901305735!2d34.981073200000004!3d48.38180175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sasdf!5e0!3m2!1sru!2sua!4v1548014721421" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div><!-- col-9 -->
+           
+        </div><!-- row -->
+        <div class="row">
+            <div class="col col-12 col-md-12 col-xl-4 ">
+                <div class="wrap FLX--align-items-center">
+                    <p class="title--step">
+                        Данные о квартире
+                        <span>
+                            шаг 2 из 7
+                        </span>
+                    </p>
+                </div>
+                <div class="wrapTable--stap">
+                    <table class="table-stap">
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="rooms">
+                                <td class="textImportant">
+                                    <b>
+                                        Количество комнат
+                                    </b>
+                                    <span>
+                                        *
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="wrapBTN--center"><!-- inner flex -->
+                                        <div class="btn-group btn-group-toggle row-rooms " data-toggle="buttons">
+                                            <label class="btn btn-secondary active INS-btn-toogle--xs">
+                                                <input type="radio" name="options" id="option1" autocomplete="off" checked=""> 1
+                                            </label>
+                                            <label class="btn btn-secondary INS-btn-toogle--xs">
+                                                <input type="radio" name="options" id="option2" autocomplete="off"> 2
+                                            </label>
+                                            <label class="btn btn-secondary INS-btn-toogle--xs">
+                                                <input type="radio" name="options" id="option3" autocomplete="off"> 3
+                                            </label>
+                                            <label class="btn btn-secondary INS-btn-toogle--xs">
+                                                <input type="radio" name="options" id="option3" autocomplete="off"> 4+
+                                            </label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="textImportant">
+                                    <b>
+                                        Площадь
+                                    </b>
+                                    <span>
+                                        *
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="form-group formFilter-row rowSelectHomeAdress">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Общая">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Жилая">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Кухня">
+                                            </div class="form-group formFilter-row rowSelectHomeAdress">
+                                    </div><!--  -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="textImportant">
+                                    <b>
+                                        Этаж
+                                    </b>
+                                    <span>
+                                        *
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="form-group formFilter-row rowSelectHomeAdress">
+                                            <div class="form-group">
+                                                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                            </div>
+                                            <div class="form-group text-center">
+                                                из
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                            </div>
+                                    </div><!--  -->
+                                </td>
+                            </tr>    
+                            <tr>
+                                <td class="textImportant">
+                                    <b> 
+                                        Планировка
+                                    </b>
+                                    <span>
+                                        *
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="form-group formFilter-row">
+                                        <select class="form-control" id="exampleCity">
+                                            <option value="Днепропетровкая область">Раздельные комнаты</option>
+                                            <option value="Днепропетровкая область">Проходная</option>
+                                            <option value="Днепропетровкая область">Студия</option>
+                                        </select>
+                                    </div><!-- form group -->
+                                </td>
+                            </tr>
+                            <tr class="ynitaz">
+                                <td class="textImportant">
+                                    <b> 
+                                        Санузел
+                                    </b>
+                                    <span>
+                                        *
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="wrapBTN--center">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                        </div>
+                                        <div class="form-group formFilter-row">
+                                            <select class="form-control" id="exampleCity">
+                                                <option value="Днепропетровкая область">Совмещенный</option>
+                                                <option value="Днепропетровкая область">Раздельный</option>
+                                                <option value="Днепропетровкая область">На улице</option>
+                                            </select>
+                                        </div><!-- form group -->
+                                    </div><!-- .wrapBTN--center -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="textImportant">
+                                    <b> 
+                                        Ремонт
+                                    </b>
+                                    <span>
+                                        *
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="form-group formFilter-row">
+                                        <select class="form-control" id="exampleCity">
+                                            <option value="Днепропетровкая область">Капитальный ремонт</option>
+                                            <option value="Днепропетровкая область">Требует ремонта</option>
+                                            <option value="Днепропетровкая область">Безнадежно</option>
+                                        </select>
+                                    </div><!-- form group -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="textImportant">
+                                    <b> 
+                                        Балкон
+                                    </b>
+                                    <span>
+                                        *
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="form-group formFilter-row">
+                                        <select class="form-control" id="exampleCity">
+                                            <option value="Днепропетровкая область">Балкон + лоджия</option>
+                                            <option value="Днепропетровкая область">Балкон</option>
+                                            <option value="Днепропетровкая область">Лоджия</option>
+                                        </select>
+                                    </div><!-- form group -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="textImportant">
+                                    <b> 
+                                        Состояние балкона
+                                    </b>
+                                    <span>
+                                        *
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="form-group formFilter-row">
+                                        <select class="form-control" id="exampleCity">
+                                            <option value="Днепропетровкая область">Застеклеен</option>
+                                            <option value="Днепропетровкая область">Не застеклен</option>
+                                            <option value="Днепропетровкая область">Зарешечен</option>
+                                            <option value="Днепропетровкая область">Зарешечен + застеклен</option>
+                                        </select>
+                                    </div><!-- form group -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="textImportant">
+                                    <b> 
+                                        Отопление
+                                    </b>
+                                    <span>
+                                        *
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="form-group formFilter-row">
+                                        <select class="form-control" id="exampleCity">
+                                            <option value="Днепропетровкая область">Центральное отопление</option>
+                                        </select>
+                                    </div><!-- form group -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="textImportant">
+                                    <b> 
+                                        Окна / Столярка
+                                    </b>
+                                </td>
+                                <td>
+                                    <div class="form-group formFilter-row">
+                                        <select class="form-control" id="exampleCity">
+                                            <option value="Днепропетровкая область">Металлопластиковые</option>
+                                        </select>
+                                    </div><!-- form group -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- wrapTable--stap -->
+            </div><!-- col -->
+            <div class="col col-12 col-md-12 col-xl-4 ">
+                <div class="wrap FLX--align-items-center">
+                    <p class="title--step">
+                        Данные о доме
+                        <span>
+                            шаг 3 из 7
+                        </span>
+                    </p>
+                </div>
+                <div class="wrapTable--stap">
+                    <table class="table-stap">
+                        <tbody>
+                            <tr>
+                                <td class="textImportant">
+                                    <b> 
+                                        Тип жилья
+                                    </b>
+                                    <span>
+                                        *
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="form-group formFilter-row">
+                                        <select class="form-control" id="exampleCity">
+                                            <option value="Днепропетровкая область">Квартиры</option>
+                                            <option value="Днепропетровкая область">Квартиры</option>
+                                            <option value="Днепропетровкая область">Квартиры</option>
+                                        </select>
+                                    </div><!-- form group -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="textImportant">
+                                    <b> 
+                                        Класс дома
+                                    </b>
+                                    <span>
+                                        *
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="form-group formFilter-row">
+                                        <select class="form-control" id="exampleCity">
+                                            <option value="Днепропетровкая область">Квартиры</option>
+                                            <option value="Днепропетровкая область">Квартиры</option>
+                                            <option value="Днепропетровкая область">Квартиры</option>
+                                        </select>
+                                    </div><!-- form group -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="textImportant">
+                                    <b> 
+                                        Материал постройки
+                                    </b>
+                                </td>
+                                <td>
+                                    <div class="form-group formFilter-row">
+                                        <select class="form-control" id="exampleCity">
+                                            <option value="Днепропетровкая область">Квартиры</option>
+                                            <option value="Днепропетровкая область">Квартиры</option>
+                                            <option value="Днепропетровкая область">Квартиры</option>
+                                        </select>
+                                    </div><!-- form group -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="textImportant">
+                                    <b> 
+                                        Тип строения 
+                                    </b>
+                                </td>
+                                <td>
+                                    <div class="form-group formFilter-row">
+                                        <select class="form-control" id="exampleCity">
+                                            <option value="Днепропетровкая область">Чешский проект</option>
+                                            <option value="Днепропетровкая область">Чешский проект</option>
+                                            <option value="Днепропетровкая область">Чешский проект</option>
+                                        </select>
+                                    </div><!-- form group -->
+                                </td>
+                            </tr>
+                            <tr class="input--xs">
+                                <td class="textImportant">
+                                    <b>
+                                        Высота потолка, м
+                                    </b>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="input--xs">
+                                <td class="textImportant">
+                                    <b>
+                                        Год постройки
+                                    </b>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><!-- col -->
+
+            <div class="col col-12 col-md-12 col-xl-4 ">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">
+                        Вторичное жилье
+                    </label>
+                </div>
+            </div><!-- col -->
+        </div><!-- end row -->
+        <div class="row">
+            <div class="col col-12 col-md-6 col-xl-6">
+                <div class="wrap FLX--align-items-center">
+                    <p class="title--step">
+                        Цена и условия продажи
+                        <span>
+                            шаг 3 из 7
+                        </span>
+                    </p>
+                </div>
+                <div class="wrapTable--stap">
+                    <table class="table-stap">
+                        <tr>
+                            <td class="textImportant">
+                                <b> 
+                                    Цена объекта
+                                </b>
+                                <span>
+                                    *
+                                </span>
+                            </td>
+                            <td>
+                                <div class="wrapBTN--SB">
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                    </div>
+                                    <div class="form-group formFilter-row">
+                                        <select class="selectСurrency form-control" id="exampleCity">
+                                            <option value="Днепропетровкая область">USD</option>
+                                            <option value="Днепропетровкая область">UAH</option>
+                                            <option value="Днепропетровкая область">EUR</option>
+                                        </select>
+                                    </div><!-- form group -->
+                                </div><!-- .wrapBTN--center -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textImportant">
+                                <b> 
+                                    Условия продажи
+                                </b>
+                                <span>
+                                    *
+                                </span>
+                            </td>
+                            <td>
+                                <div class="wrapBTN--center">
+                                    <div class="form-group formFilter-row">
+                                        <select class="form-control" id="exampleCity">
+                                            <option value="Днепропетровкая область">Цена от застройщика</option>
+                                        </select>
+                                    </div><!-- form group -->
+                                </div><!-- .wrapBTN--center -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textImportant">
+                                <b> 
+                                    Возможен обмен
+                                </b>
+                            </td>
+                            <td>
+                                <div class="wrapBTN--center">
+                                    <div class="form-group formFilter-row">
+                                        <select class="form-control" id="exampleCity">
+                                            <option value="Днепропетровкая область">Да</option>
+                                        </select>
+                                    </div><!-- form group -->
+                                </div><!-- .wrapBTN--center -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textImportant">
+                                <b> 
+                                    Возможен обмен
+                                </b>
+                            </td>
+                            <td>
+                                <div class="wrapBTN--center">
+                                    <div class="form-group formFilter-row">
+                                        <select class="form-control" id="exampleCity">
+                                            <option value="Днепропетровкая область">От представителя собственника</option>
+                                        </select>
+                                    </div><!-- form group -->
+                                </div><!-- .wrapBTN--center -->
+                            </td>
+                        </tr>
+                    </table>
+                </div><!-- wrap -->
+            </div><!-- col -->
+            <div class="col col-12 col-md-6 col-xl-6">
+                <div class="wrap FLX--align-items-center">
+                    <p class="title--step">
+                        Контактные данные
+                        <span>
+                            шаг 4 из 7
+                        </span>
+                    </p>
+                </div>
+                <div class="wrapTable--stap">
+                    <table class="table-stap">
+                        <tbody>
+                            <tr>
+                                <td class="textImportant">
+                                    <b> 
+                                        ФИО
+                                    </b>
+                                    <span>
+                                        *
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="form-group formFilter-row">
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="№11">
+                                    </div><!-- form group -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><!-- col -->
+        </div><!-- row -->
+        <div class="row">
+            <div class="col col-12 d-flex justify-content-center" >
+                <nav aria-label="Page navigation example " >
+                    <ul class="pagination">
+                        <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div><!-- col -->
+        </div><!-- row -->
+    </section><!-- end cont -->
+    </div>
+    <script src="/js/libs/jquery-3.3.1.min.js"   ></script>
+    <script src="/js/libs/bootstrap.min.js"     defer ></script>
+    <script src="/js/libs/slick.min.js"         defer ></script>
+    <script src="/js/my.js"                     defer ></script>
+    <script>
+        $(document).ready(function(){
+            var check = true;
+            $('#checkAll').on('click', function(){
+                $('#tableCheck tr td input').prop('checked', check);
+                check = !check;
+            });
+        });
+    </script>
+</body>
+</html>

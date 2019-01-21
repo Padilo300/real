@@ -1,6 +1,10 @@
 .wrapBTN--center{
     display: flex;
 }
+.FLX--align-items-center{
+    display: flex;
+    align-items: center;
+}
 .wrapBTN--SB{
     display: flex;
     justify-content: space-between;
@@ -122,4 +126,21 @@
     &:hover{
         box-shadow: 0 0  10px #E4E6E9;
     }
+}
+.rowSelectHomeAdress{
+    display: flex;
+    justify-content: space-between;
+    > *{
+        width: 75px;
+    }
+}
+.maps{
+    height: 60vh;
+    > *{
+        height: 100%;
+        width: 100%;
+    }
+}
+.wrapTable--stap{
+    max-width: 333px;
 }
