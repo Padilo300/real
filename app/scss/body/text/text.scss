@@ -206,6 +206,11 @@ a{
         padding: 0 10px;
     }
 }
+.title--stepXS{
+    @extend .title--step;
+    font-size: 15px;
+    margin: 0;
+}
 .textImportant{
     color: #4F4F4F;
     span{
@@ -221,4 +226,7 @@ a{
     *{
         margin: 0 !important;
     }
+}
+.bold{
+    font-weight: 900;
 }

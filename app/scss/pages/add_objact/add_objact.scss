@@ -1,0 +1,28 @@
+.discriptionObjact{
+    .rightSide{
+        textarea{
+            min-height: 285px;
+        }
+    }
+    .leftSide{
+        .wrapCheck{
+            height: 30px;
+        }
+    }
+}
+.priceAndInfo{
+    .rowPrice{
+        td{
+            &:nth-child(2){
+                >div > div:first-child{
+                    margin-right: 3px;
+                }
+            }
+        }
+    }
+    .wrapTable--stap{
+        tr{
+            height: 35px;
+        }
+    }
+}

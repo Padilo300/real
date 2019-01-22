@@ -9,6 +9,12 @@
     display: flex;
     justify-content: space-between;
 }
+.fullHeight{
+    min-height: 60vh;
+}
+.flexaAlignEnd{
+    align-content: end;
+}
 .wrapBTN--fend{
     display: flex;
     justify-content: flex-end;
@@ -173,7 +179,7 @@
     }
 }
 html body .wrapTable--stap{
-    max-width: 333px;
+    max-width: 385px;
     .form-control{
         border-radius: 0;
     }
@@ -192,5 +198,13 @@ html body .wrapTable--stap{
         display: flex;
         justify-content: space-around;
 
+    }
+}
+
+.md-colum{
+    @media screen and (max-width: 767px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
     }
 }
