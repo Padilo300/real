@@ -8,8 +8,10 @@
     transition: all 0.3s;
     cursor: pointer;
     margin: 10px auto;
+    display: block;
     &:hover{
         box-shadow: 0 0 6px 0 #BDBDBD;
+        text-decoration: none;
     }
     > .bord-title{
         font-size: 18px;
@@ -18,6 +20,7 @@
         margin: 0;
         height: 20px;
         text-transform: uppercase;
+        display: block;
     }
     > .bord-details{
         margin: 1px 0 1px 0;

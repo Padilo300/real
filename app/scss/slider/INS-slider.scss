@@ -1,28 +1,29 @@
 
 .INS-slider{
-    max-width: 600px;
+    max-width: 440px;
     margin: 0 auto;
     .mainIMG{
         overflow: hidden;
+        height: 270px;
         @media screen and (max-width: 767px){
             height: auto;
         }
         *{
-            min-height:  400px;
+            min-height:  270px;
             object-fit: cover;
             margin: 0 auto;
             *{
-                min-height:  400px;
+                min-height:  270px;
                 object-fit: cover;
                 margin: 0 auto;
             }
         }
         img{
-            min-height: auto;
             max-width: 100%;
+            height: 100%;
         }
         >.miniIMG-iteam{
-            height: 100%;
+            height: 270px;
             > img {
                 width:  100%;
                 margin: 0 auto;

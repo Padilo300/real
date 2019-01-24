@@ -9,11 +9,18 @@ $(document).ready(function () {
         return false;
     });
 
+    /* выбрать все чекбоксы */
     var check = true;
     $('.checkAll').on('click', function(){
         var p = $(this).closest("table") ;
         p.find('input' ).prop('checked', check);
         check = !check;
+    });
+
+    /* перейти по ссылке */
+    $('.dataLink').on('click', function(){
+        var link = $(this).attr('data-link');
+        window.location.href = link;
     });
 
 
