@@ -16,4 +16,29 @@ $(document).ready(function () {
         check = !check;
     });
 
+
+     /* =============  работа модалочки  =============== */
+   
+        /* ==== открываем ->O ==== */
+        $('.insiderModal-open').on('click', function(){
+            console.log('Нажата кнопка вызова модалки');
+            var nameModal  = $(this).attr('data-insiderModal-open'); // узанем имя модалки
+            if(nameModal){
+                console.log('модалка найдена с именем ' + nameModal);
+            }else{
+                console.log('модалка не найдена!');
+            }
+            $('.insider_modal[data-insiderModal-name="'+ nameModal +'"]').addClass('ins_modal-open'); // ищем модалку по имени в дата атрибуте и вызываем
+        });
+
+        /* === закрываем  === */
+        
+        $('.insiderModal-CLOSE').on('click',function(){
+            var nameModal = $(this).parent().attr('data-insidermodal-name');
+            $('.insider_modal[data-insiderModal-name="'+ nameModal +'"]').removeClass('ins_modal-open'); // ищем модалку по имени в дата атрибуте и прячем ее
+        });
+    /* =============  конец работа модалочки  =============== */
+
+
+    
 });

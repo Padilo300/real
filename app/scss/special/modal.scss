@@ -1,0 +1,59 @@
+
+/* ==============   Модальное окно  ========================= */
+.getModal{
+    transition: all 0.3s;
+}
+.getModal:hover{
+    color: #1678c2;
+    text-decoration: underline;
+}
+.insider_modal{
+    display: block;
+    position: fixed;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    left: 200%;
+    top: 0;
+    transition: all 1s;
+    z-index: 999999;
+    border-radius: 2px 0 0 2px;
+    box-shadow: -12px 15px 45px 0 #0a0a0a8a;
+    padding: 5px 10% 5px 15px;
+    top: 10px;
+}
+.insiderModal-open:hover{
+    cursor: pointer;
+}
+
+
+.ins_modal-open{
+    left:  10% ;
+}
+.insider_modal .insiderModal-CLOSE{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: -44px;
+    background: #9c9999;
+    border: none;
+    color: #eaeaea;
+    font-weight: 100;
+    border-radius: 100%;
+    transition: all 0.3s;
+    line-height: 2px;
+    font-size: 40px;
+    padding: 0 0 14px 0;
+    cursor: pointer;
+        &:focus{
+            outline: none;
+            border: none;
+        }
+}
+
+.insider_modal .insiderModal-CLOSE:hover{
+    color: #fff;
+    transition: all 0.4s;
+    transform: rotate(180deg);
+}

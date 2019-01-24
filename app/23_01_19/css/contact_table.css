@@ -1,0 +1,45 @@
+.w75px{
+    width: 50px;
+}
+.w200px{
+    width: 170px;
+}
+.ui.form .inline.fields .wide.field>input, .ui.form .inline.fields .wide.field>select{
+    padding: 5px;
+}
+.left{
+    margin-left: 10px;
+}
+#reload{
+    color: #cecece;
+    position: absolute;
+    right: 10%;
+}
+
+.top-bar{
+    height: 30px;
+}
+.ui.form .inline.fields{
+    font-size: 14px;
+}
+label{
+    font-size: 14px;
+}
+table.table tbody tr td {
+    vertical-align: middle;
+}
+/* 
+.table{
+    min-width: 1140px;
+} */
+.tableLeadWrap{
+    width: 100%;
+}
+
+.ui.form .inline.fields .wide.field{
+    padding: 0!important;
+}
+.table *{
+    padding: 3px!important;
+}
+

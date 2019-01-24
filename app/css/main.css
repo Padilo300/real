@@ -8749,6 +8749,21 @@ body::-webkit-scrollbar-thumb {
   .castom-width-1 {
     max-width: inherit; } }
 
+.linkNewWind {
+  display: block;
+  color: #999;
+  font-size: 22px; }
+
+.flex-end {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
 /* сдвиг placeholder-а вправо при фокусе*/
 input::-webkit-input-placeholder {
   text-indent: 0px;
@@ -8806,6 +8821,73 @@ input:focus:-ms-input-placeholder {
 .border-b {
   border-bottom: 1px  solid #9999993b; }
 
+/* ==============   Модальное окно  ========================= */
+.getModal {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.getModal:hover {
+  color: #1678c2;
+  text-decoration: underline; }
+
+.insider_modal {
+  display: block;
+  position: fixed;
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  left: 200%;
+  top: 0;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  z-index: 999999;
+  -webkit-border-radius: 2px 0 0 2px;
+          border-radius: 2px 0 0 2px;
+  -webkit-box-shadow: -12px 15px 45px 0 #0a0a0a8a;
+          box-shadow: -12px 15px 45px 0 #0a0a0a8a;
+  padding: 5px 10% 5px 15px;
+  top: 10px; }
+
+.insiderModal-open:hover {
+  cursor: pointer; }
+
+.ins_modal-open {
+  left: 10%; }
+
+.insider_modal .insiderModal-CLOSE {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: -44px;
+  background: #9c9999;
+  border: none;
+  color: #eaeaea;
+  font-weight: 100;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  line-height: 2px;
+  font-size: 40px;
+  padding: 0 0 14px 0;
+  cursor: pointer; }
+  .insider_modal .insiderModal-CLOSE:focus {
+    outline: none;
+    border: none; }
+
+.insider_modal .insiderModal-CLOSE:hover {
+  color: #fff;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
 @media screen and (max-width: 767px) {
   .headerLine {
     -webkit-box-orient: vertical;
@@ -8849,7 +8931,7 @@ input:focus:-ms-input-placeholder {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  margin: 0 auto  0 0; }
+  margin: -5px auto  0 0; }
   @media screen and (min-width: 500px) and (max-width: 1199px) {
     .object-filter {
       margin: 0 auto; } }
@@ -9251,6 +9333,9 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
 .blue {
   color: #2D9CDB !important; }
 
+.yellow {
+  color: #fd9420 !important; }
+
 .small--grey {
   line-height: 25px;
   font-size: 12px;
@@ -9287,7 +9372,7 @@ html body h1, html body h2, html body h3, html body h4, html body h5, html body 
 .descriptionAppart {
   line-height: 18px;
   max-width: 500px;
-  margin: 0 0 30px 0; }
+  margin: 0 0 15px 0; }
   @media screen and (max-width: 575px) {
     .descriptionAppart {
       margin: 0; } }
@@ -9544,7 +9629,7 @@ a {
     width: -moz-max-content;
     width: max-content; }
     .wrapAppartament footer > p {
-      margin: -15px 0 0 15px;
+      margin: 0 0 0 15px;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -10458,6 +10543,181 @@ html body .wrapTable--stap {
   .table-stap tbody tr.input--xs input, .table-stap tbody tr.input--xs select {
     max-width: 72px; }
 
+/* ============ таблица ================= */
+.tableDocs {
+  min-width: auto !important; }
+
+.tableDocs tr {
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
+
+.tableDocs tr:hover {
+  background: #84848414; }
+
+/* ========== разное  ========= */
+.noBorder tr td,
+.noBorder tr th {
+  border: none !important;
+  border-top: none !important; }
+
+.toggleColorTD tr td {
+  font-size: 12px; }
+
+.toggleColorTD tr td:first-child {
+  color: #8a8a8a; }
+
+/* =======  Начало конец строительства ========== */
+.startFinish > .row:first-child > div {
+  background: #9c999933;
+  height: 135px; }
+
+.startFinish .start .far,
+.startFinish .finish .far {
+  color: #3d91da;
+  margin: 0 5px; }
+
+.startFinish .start,
+.startFinish .finish {
+  margin: 10px 0 5px 0; }
+
+.startFinish .start + .listStartFinish {
+  padding: 0 0 0 5px; }
+
+.startFinish .start {
+  text-align: left; }
+
+.startFinish .finish + .listStartFinish {
+  padding: 0 0 0 0; }
+
+/* ================  СПиски начало/конец строительства   ==================== */
+.listStartFinish {
+  list-style: none;
+  margin: 10px 0 0 0; }
+
+.listStartFinish li {
+  margin: 5px 0; }
+
+.listStartFinish li p mark {
+  background: none;
+  color: #3187db; }
+
+.listStartFinish li p span {
+  color: #777; }
+
+/* ==========  Planes  ============ */
+.roomPlan {
+  max-width: 150px; }
+
+.roomPlan img {
+  max-width: 100%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative; }
+
+.roomPlan a {
+  position: relative; }
+
+.roomPlan a:after {
+  content: "";
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 485.213 485.213" style="enable-background:new 0 0 485.213 485.213;" xml:space="preserve"><g><g><path d="M471.882,407.567L360.567,296.243c-16.586,25.795-38.536,47.734-64.331,64.321l111.324,111.324    c17.772,17.768,46.587,17.768,64.321,0C489.654,454.149,489.654,425.334,471.882,407.567z" fill="#3d91da"/><path d="M363.909,181.955C363.909,81.473,282.44,0,181.956,0C81.474,0,0.001,81.473,0.001,181.955s81.473,181.951,181.955,181.951    C282.44,363.906,363.909,282.437,363.909,181.955z M181.956,318.416c-75.252,0-136.465-61.208-136.465-136.46    c0-75.252,61.213-136.465,136.465-136.465c75.25,0,136.468,61.213,136.468,136.465    C318.424,257.208,257.206,318.416,181.956,318.416z" fill="#3d91da"/><path d="M75.817,181.955h30.322c0-41.803,34.014-75.814,75.816-75.814V75.816C123.438,75.816,75.817,123.437,75.817,181.955z" fill="#3d91da"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>');
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -8px;
+  left: 60px;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.roomPlan a:hover:after {
+  opacity: 0; }
+
+.roomPlan a:hover img {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2); }
+
+.roomPlan img + svg {
+  position: absolute;
+  top: 47px;
+  left: 31px; }
+
+.roomPlanWrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.roomPlan h5 {
+  text-align: center;
+  margin: 0 0 2px 0; }
+
+.roomPlan h5 + p {
+  color: #777;
+  text-align: center;
+  font-size: 12px;
+  white-space: nowrap; }
+
+.roomPlan figcaption {
+  margin: 15px 0 0 0; }
+
+.roomPlan figcaption p {
+  text-align: center;
+  margin: 0 0 3px 0; }
+
+.roomPlanTitele {
+  margin: 30px 0 10px 0; }
+
+/* =================  Таблица (квартир в доме)  =========================== */
+.tableApartaments {
+  margin-top: 100px; }
+
+.tableApartaments thead tr {
+  background: #adcfea47; }
+
+.tableApartaments thead tr th,
+.tableApartaments tbody tr td {
+  text-align: center;
+  font-size: 12px;
+  vertical-align: middle; }
+
+.tableApartaments tr {
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
+
+.tableApartaments tbody tr:hover {
+  background: #84848414; }
+
+.TDwrapImg {
+  padding: 0 !important; }
+
+.TDwrapImg > a {
+  display: block;
+  width: 50px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 5px auto; }
+
+.TDwrapImg > a img {
+  max-width: 100%; }
+
+.tableDoc tr td {
+  padding: 0 10px;
+  font-size: 1.2em; }
+
 .xsColumn {
   margin: 5px 0 0 0; }
   @media screen and (max-width: 1199px) {
@@ -10491,9 +10751,16 @@ html body .wrapTable--stap {
 .priceAndInfo .wrapTable--stap tr {
   height: 35px; }
 
+.listObjact .listObjact-rowHeader {
+  height: 40px;
+  border-bottom: 1px solid #BDBDBD;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 body {
-  background: #fff;
-  padding: 10px; }
+  background: #fff; }
 
 img {
   max-width: 100%;

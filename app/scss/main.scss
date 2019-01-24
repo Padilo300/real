@@ -12,6 +12,7 @@
 @import "special/placeholder"       ;
 @import "special/grid"              ;
 @import "special/decoration"        ;
+@import "special/modal"             ;
 
 // head
 @import "head/header"               ;
@@ -45,11 +46,11 @@
 // pages HOME
 @import 'pages/home/first_section'      ;
 @import 'pages/add_objact/add_objact'   ;
+@import 'pages/listObjact/listObjact'   ;
 
 
 body{
     background: #fff;
-    padding: 10px;
 }
 img{
     max-width: 100%;
