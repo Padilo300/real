@@ -47,5 +47,12 @@ $(document).ready(function () {
     /* =============  конец работа модалочки  =============== */
 
 
-    
+
+    /* затемнить элементы без ссылки */
+    $('.bord').each(function(){
+        var href = $(this).attr('href');
+        if(!href){
+            $(this).css({'opacity': '0.4'});
+    }
+    });
 });

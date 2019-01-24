@@ -44,6 +44,13 @@ $main-btn-color: #55595C;
         
     }
 }
+
+.INS-btn-toogle.active{
+    background: #CCCCCC !important;
+    color: #fff !important;
+    box-shadow: none;
+}
+
 .INS-btn-toogle--a{
     @extend .INS-btn-toogle;
     width: 60px !important;
@@ -61,8 +68,11 @@ $main-btn-color: #55595C;
 }
 .btnFilterTab{
     font-size: 1em;
-    max-width: 280px;
+    max-width: 290px;
     margin: 0 auto 0 0;
+    .setting{
+        font-size: 16px;
+    }
 }
 
 .INS-btn-mainPage{
@@ -150,6 +160,10 @@ $main-btn-color: #55595C;
     box-sizing: border-box;
     width: max-content;
     min-width: 160px;
+    display: block;
+    color: #fff !important;
+    line-height: 30px;
+    border: none;
 }
 
 .btnAddobjactM--red{

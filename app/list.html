@@ -18,6 +18,47 @@
         <i class="sprite sprite-square"></i>
         <i class="sprite sprite-star"></i> -->
     <div class="rootWrap">
+            <div class="modal fade" id="dashModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-body">
+                        <table class="table table-borderd">
+                            <thead>
+                                <tr>
+                                    <th>Дата</th>
+                                    <th>Сумма</th>
+                                    <th>Изменение</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10.01.2019</td>
+                                    <td>99 000 $</td>
+                                    <td>3 000 $ <i class="fa fa-long-arrow-down red" aria-hidden="true"></i></td>
+                                </tr>
+
+                                <tr>
+                                    <td>03.01.2019</td>
+                                    <td>102 000 $</td>
+                                    <td>5 000 $ <i class="fa fa-long-arrow-down red" aria-hidden="true"></i></td>
+                                </tr>
+
+                                <tr>
+                                    <td>01.01.2019</td>
+                                    <td>108 000 $</td>
+                                    <td>7 000 $ <i class="fa fa-long-arrow-up green" aria-hidden="true"></i></td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"> Закрыть</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
 
             <div class="insider_modal-1 insider_modal" data-insiderModal-name="AHrieltor">
                     <button class="insiderModal-CLOSE"> <!-- кнопка закрывть модалку -->
@@ -71,10 +112,12 @@
                                                                         <a href="#">
                                                                             <input type="checkbox" name="" id="">
                                                                         </a>
-                                                                        <a href="#">
+                                                                        <a href="#" data-d="dsfasf">
                                                                             <i class="sprite sprite-menu"></i>
                                                                         </a>
-                                                                        
+                                                                        <a href="#" data-toggle="modal" data-target="#">
+                                                                            <i class="fa fa-line-chart" aria-hidden="true"></i>
+                                                                        </a>
                                                                     </div>
                                                                     <div class="img">
                                                                             <div class="label-wrap">
@@ -564,37 +607,63 @@
                         <i class="sprite sprite-map-pin"></i>
                         На карте
                     </button>     
+
+                    <button class="btn-img setting" >
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                    </button>     
                 </div><!-- wrapBTN--center -->
                 
             </div><!-- col -->
             <div class="col col-md-12 col-12 col-xl-9">
                     <div class="wrapBTN--SB xsColumn">
                         <div class="wrapBTN--center">
-                            <select class="form-control select-normal m03px">
-                                <option value="Днепропетровкая область">Днепропетровкая область</option>
-                                <option value="Днепропетровкая область">Днепропетровкая область</option>
-                                <option value="Днепропетровкая область">Днепропетровкая область</option>
-                                <option value="Днепропетровкая область">Днепропетровкая область</option>
-                            </select>
-                            <select class="form-control select-normal m03px">
-                                <option value="">За последний месяц</option>
-                                <option value="">За последний месяц</option>
-                                <option value="">За последний месяц</option>
-                                <option value="">За последний месяц</option>
-                            </select>
-                            <select class="form-control select-normal m03px">
-                                <option value="">Сначала новые</option>
-                                <option value="">Сначала старые</option>
-                                <option value="">Сначала с конца</option>
-                            </select>
-                            <button class="btnAddobjact--m" data-toggle="modal" data-target="#exampleModal">
-                                + Добавить объект
-                            </button>
+                                <select class="form-control select-normal m03px">
+                                        <option value="">Днепропетровская область</option>
+                                        <option value="">Винницкая область</option>
+                                        <option value="">Волынская область</option>
+                                        <option value="">Донецкая область</option>
+                                        <option value="">Житомирская область</option>
+                                        <option value="">Закарпатская область</option>
+                                        <option value="">Запорожская область</option>
+                                        <option value="">Ивано- Франковская область</option>
+                                        <option value="">Киевская область</option>
+                                        <option value="">Кировоградская область</option>
+                                        <option value="">Крым</option>
+                                        <option value="">Луганская область</option>
+                                        <option value="">Львовская область</option>
+                                        <option value="">Николаевская область</option>
+                                        <option value="">Одесская область</option>
+                                        <option value="">Полтавская область</option>
+                                        <option value="">Ровенская область</option>
+                                        <option value="">Сумская область</option>
+                                        <option value="">Тернопольская область</option>
+                                        <option value="">Харьковская область</option>
+                                        <option value="">Херсонская область</option>
+                                        <option value="">Хмельницкая область</option>
+                                        <option value="">Черкасская область</option>
+                                        <option value="">Черниговская область</option>
+                                        <option value="">Черновицкая область</option>
+                                    </select>
+                                    <select class="form-control select-normal m03px">
+                                        <option value="">За сегодня</option>
+                                        <option value="">За сегодня и вчера</option>
+                                        <option value="">За неделю</option>
+                                        <option value="">За 2 недели</option>
+                                        <option value="">За месяц</option>
+                                        <option value="">За все время</option>
+                                    </select>
+                                    <select class="form-control select-normal m03px">
+                                        <option value="">Сначала новые</option>
+                                        <option value="">Сначала старые</option>
+                                    </select>
+                                    <button class="btnAddobjact--m" data-toggle="modal" data-target="#exampleModal">
+                                        + Добавить объект
+                                    </button>
                         </div><!-- wrapBTN--center -->
                         <nav aria-label="breadcrumb" class="float-right">
                             <ol class="breadcrumb bg-none ">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Library</li>
+                                <li class="breadcrumb-item"><a href="#" onclick="history.back();" >Главная</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Объекты</li>
                             </ol>
                         </nav>
                         <a href="" target="_blank" class="linkNewWind">
@@ -690,7 +759,7 @@
                         </table>
                     </div>
                     <div class="modal-footer">
-                      <button type="submit" class="btnAddobjactM" >Добавить</button>
+                      <a href="add_objact.html" class="btnAddobjactM" >Добавить</a>
                       <button type="reset" class="btnAddobjactM--red" data-dismiss="modal">Отменить</button>
                     </div>
                   </form>
@@ -719,16 +788,14 @@
 
                     <div class="wrapBTN--SB formFilter-row">
                         <select class="form-control select-xs m03px">
-                            <option value="Днепропетровкая область">Продажа</option>
-                            <option value="Днепропетровкая область">Днепропетровкая область</option>
-                            <option value="Днепропетровкая область">Днепропетровкая область</option>
-                            <option value="Днепропетровкая область">Днепропетровкая область</option>
+                                <option value="Днепропетровкая область">Продажа</option>
+                                <option value="Днепропетровкая область">Аренда</option>
                         </select>
                         <select class="form-control select-normal m03px">
-                            <option value="Днепропетровкая область">Квартиры</option>
-                            <option value="Днепропетровкая область">Днепропетровкая область</option>
-                            <option value="Днепропетровкая область">Днепропетровкая область</option>
-                            <option value="Днепропетровкая область">Днепропетровкая область</option>
+                                <option value="Днепропетровкая область">Квартиры</option>
+                                <option value="Днепропетровкая область">Дома</option>
+                                <option value="Днепропетровкая область">Земельные участки</option>
+                                <option value="Днепропетровкая область">Коммерческая недв.</option>
                         </select>
                     </div><!-- wrapBTN--SB -->
                     <div class="form-group formFilter-row">
@@ -738,9 +805,10 @@
                             </b>
                         </label>
                         <select class="form-control" id="exampleCity">
-                            <option value="Днепропетровкая область">Квартиры</option>
-                            <option value="Днепропетровкая область">Днепропетровкая область</option>
-                            <option value="Днепропетровкая область">Днепропетровкая область</option>
+
+                            <option value="Днепропетровкая область">Кировский</option>
+                            <option value="Днепропетровкая область">Центральный</option>
+                            <option value="Днепропетровкая область">Бабушкинский</option>
                             <option value="Днепропетровкая область">Днепропетровкая область</option>
                         </select>
                     </div><!-- form group -->
@@ -859,6 +927,11 @@
                                         <a href="#">
                                             <i class="sprite sprite-menu"></i>
                                         </a>
+
+                                        <a href="#" class="green" data-toggle="modal"  data-target="#dashModal">
+                                            <i class="fa fa-line-chart" aria-hidden="true"></i>
+                                        </a>
+                                        
                                         
                                     </div>
                                     <div class="img">
@@ -888,7 +961,7 @@
                                 </div><!-- wrapImgAppartament -->
                             </div><!-- col-3 -->
                             <div class="col col-sm-9 col-12 col-md-7 position-relative wrap">
-                                <a href="/2.html" class="hrefObject">
+                                <a href="details.html" class="hrefObject">
                                     <h1 class="h3 titleAppart">
                                         Героев Сталинграда просп., 4А, Оболонский р-н, 
                                         г. Киев
@@ -1063,7 +1136,7 @@
                                     </div><!-- wrapImgAppartament -->
                                 </div><!-- col-3 -->
                                 <div class="col col-sm-9 col-12 col-md-7 position-relative wrap">
-                                    <a href="/2.html" class="hrefObject">
+                                    <a href="details.html" class="hrefObject">
                                         <h1 class="h3 titleAppart">
                                             Героев Сталинграда просп., 4А, Оболонский р-н, 
                                             г. Киев
@@ -1237,7 +1310,7 @@
                                         </div><!-- wrapImgAppartament -->
                                     </div><!-- col-3 -->
                                     <div class="col col-sm-9 col-12 col-md-7 position-relative wrap">
-                                        <a href="/2.html" class="hrefObject">
+                                        <a href="details.html" class="hrefObject">
                                             <h1 class="h3 titleAppart">
                                                 Героев Сталинграда просп., 4А, Оболонский р-н, 
                                                 г. Киев
@@ -1410,7 +1483,7 @@
                                             </div><!-- wrapImgAppartament -->
                                         </div><!-- col-3 -->
                                         <div class="col col-sm-9 col-12 col-md-7 position-relative wrap">
-                                            <a href="/2.html" class="hrefObject">
+                                            <a href="details.html" class="hrefObject">
                                                 <h1 class="h3 titleAppart">
                                                     Героев Сталинграда просп., 4А, Оболонский р-н, 
                                                     г. Киев
@@ -1583,7 +1656,7 @@
                                                 </div><!-- wrapImgAppartament -->
                                             </div><!-- col-3 -->
                                             <div class="col col-sm-9 col-12 col-md-7 position-relative wrap">
-                                                <a href="/2.html" class="hrefObject">
+                                                <a href="details.html" class="hrefObject">
                                                     <h1 class="h3 titleAppart">
                                                         Героев Сталинграда просп., 4А, Оболонский р-н, 
                                                         г. Киев
@@ -1722,7 +1795,7 @@
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                     <div class="hidden">
 
-                    <table class="table text-center lh-min-all table-hover">
+                    <table class="table text-center tableListObj lh-min-all table-hover">
                             <thead>
                                 <tr>
                                     <th>
@@ -1791,17 +1864,9 @@
                                     </td>
                                     <td>
                                         99 000 $
-                                        <br>
-                                        <span class="small--grey">
-                                            2 777 247 грн.
-                                        </span>
                                     </td>
                                     <td>
                                         1 200 $ за м²
-                                        <br>
-                                        <span class="small--grey">
-                                            1 200 $ за м²
-                                        </span>
                                     </td>
                                     <td>
                                         <a href="#">
@@ -1843,17 +1908,9 @@
                                         </td>
                                         <td>
                                             99 000 $
-                                            <br>
-                                            <span class="small--grey">
-                                                2 777 247 грн.
-                                            </span>
                                         </td>
                                         <td>
                                             1 200 $ за м²
-                                            <br>
-                                            <span class="small--grey">
-                                                1 200 $ за м²
-                                            </span>
                                         </td>
                                         <td>
                                             <a href="#">
@@ -1895,17 +1952,9 @@
                                             </td>
                                             <td>
                                                 99 000 $
-                                                <br>
-                                                <span class="small--grey">
-                                                    2 777 247 грн.
-                                                </span>
                                             </td>
                                             <td>
                                                 1 200 $ за м²
-                                                <br>
-                                                <span class="small--grey">
-                                                    1 200 $ за м²
-                                                </span>
                                             </td>
                                             <td>
                                                 <a href="#">
@@ -1917,266 +1966,7 @@
                                                 </div>
                                             </td>
                                         </tr>
-                                        <tr>
-                                                <td>
-                                                    <input type="checkbox">
-                                                </td>
-                                                <td>
-                                                    2
-                                                </td>
-                                                <td>
-                                                    <i class="sprite sprite-menu"></i>
-                                                </td>
-                                                <td>
-                                                    <span class="text-success">
-                                                        ЭКС
-                                                    </span>
-                                                </td>
-                                                <td>
-                                                    Героев Сталинграда просп., 4А, Оболонский р-н, 
-                                                    г. Киев
-                                                </td>
-                                                <td>
-                                                    50 / 35 / 15    
-                                                </td>
-                                                <td>
-                                                    4 / 11
-                                                </td>
-                                                <td>
-                                                    2
-                                                </td>
-                                                <td>
-                                                    99 000 $
-                                                    <br>
-                                                    <span class="small--grey">
-                                                        2 777 247 грн.
-                                                    </span>
-                                                </td>
-                                                <td>
-                                                    1 200 $ за м²
-                                                    <br>
-                                                    <span class="small--grey">
-                                                        1 200 $ за м²
-                                                    </span>
-                                                </td>
-                                                <td>
-                                                    <a href="#">
-                                                        Святослав Райский
-                                                    </a>
-                
-                                                    <div class="small--grey">
-                                                        АН “Вариант”
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                    <td>
-                                                        <input type="checkbox">
-                                                    </td>
-                                                    <td>
-                                                        2
-                                                    </td>
-                                                    <td>
-                                                        <i class="sprite sprite-menu"></i>
-                                                    </td>
-                                                    <td>
-                                                        <span class="text-success">
-                                                            ЭКС
-                                                        </span>
-                                                    </td>
-                                                    <td>
-                                                        Героев Сталинграда просп., 4А, Оболонский р-н, 
-                                                        г. Киев
-                                                    </td>
-                                                    <td>
-                                                        50 / 35 / 15    
-                                                    </td>
-                                                    <td>
-                                                        4 / 11
-                                                    </td>
-                                                    <td>
-                                                        2
-                                                    </td>
-                                                    <td>
-                                                        99 000 $
-                                                        <br>
-                                                        <span class="small--grey">
-                                                            2 777 247 грн.
-                                                        </span>
-                                                    </td>
-                                                    <td>
-                                                        1 200 $ за м²
-                                                        <br>
-                                                        <span class="small--grey">
-                                                            1 200 $ за м²
-                                                        </span>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#">
-                                                            Святослав Райский
-                                                        </a>
-                    
-                                                        <div class="small--grey">
-                                                            АН “Вариант”
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                        <td>
-                                                            <input type="checkbox">
-                                                        </td>
-                                                        <td>
-                                                            2
-                                                        </td>
-                                                        <td>
-                                                            <i class="sprite sprite-menu"></i>
-                                                        </td>
-                                                        <td>
-                                                            <span class="text-success">
-                                                                ЭКС
-                                                            </span>
-                                                        </td>
-                                                        <td>
-                                                            Героев Сталинграда просп., 4А, Оболонский р-н, 
-                                                            г. Киев
-                                                        </td>
-                                                        <td>
-                                                            50 / 35 / 15    
-                                                        </td>
-                                                        <td>
-                                                            4 / 11
-                                                        </td>
-                                                        <td>
-                                                            2
-                                                        </td>
-                                                        <td>
-                                                            99 000 $
-                                                            <br>
-                                                            <span class="small--grey">
-                                                                2 777 247 грн.
-                                                            </span>
-                                                        </td>
-                                                        <td>
-                                                            1 200 $ за м²
-                                                            <br>
-                                                            <span class="small--grey">
-                                                                1 200 $ за м²
-                                                            </span>
-                                                        </td>
-                                                        <td>
-                                                            <a href="#">
-                                                                Святослав Райский
-                                                            </a>
-                        
-                                                            <div class="small--grey">
-                                                                АН “Вариант”
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                            <td>
-                                                                <input type="checkbox">
-                                                            </td>
-                                                            <td>
-                                                                2
-                                                            </td>
-                                                            <td>
-                                                                <i class="sprite sprite-menu"></i>
-                                                            </td>
-                                                            <td>
-                                                                <span class="text-success">
-                                                                    ЭКС
-                                                                </span>
-                                                            </td>
-                                                            <td>
-                                                                Героев Сталинграда просп., 4А, Оболонский р-н, 
-                                                                г. Киев
-                                                            </td>
-                                                            <td>
-                                                                50 / 35 / 15    
-                                                            </td>
-                                                            <td>
-                                                                4 / 11
-                                                            </td>
-                                                            <td>
-                                                                2
-                                                            </td>
-                                                            <td>
-                                                                99 000 $
-                                                                <br>
-                                                                <span class="small--grey">
-                                                                    2 777 247 грн.
-                                                                </span>
-                                                            </td>
-                                                            <td>
-                                                                1 200 $ за м²
-                                                                <br>
-                                                                <span class="small--grey">
-                                                                    1 200 $ за м²
-                                                                </span>
-                                                            </td>
-                                                            <td>
-                                                                <a href="#">
-                                                                    Святослав Райский
-                                                                </a>
-                            
-                                                                <div class="small--grey">
-                                                                    АН “Вариант”
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                                <td>
-                                                                    <input type="checkbox">
-                                                                </td>
-                                                                <td>
-                                                                    2
-                                                                </td>
-                                                                <td>
-                                                                    <i class="sprite sprite-menu"></i>
-                                                                </td>
-                                                                <td>
-                                                                    <span class="text-success">
-                                                                        ЭКС
-                                                                    </span>
-                                                                </td>
-                                                                <td>
-                                                                    Героев Сталинграда просп., 4А, Оболонский р-н, 
-                                                                    г. Киев
-                                                                </td>
-                                                                <td>
-                                                                    50 / 35 / 15    
-                                                                </td>
-                                                                <td>
-                                                                    4 / 11
-                                                                </td>
-                                                                <td>
-                                                                    2
-                                                                </td>
-                                                                <td>
-                                                                    99 000 $
-                                                                    <br>
-                                                                    <span class="small--grey">
-                                                                        2 777 247 грн.
-                                                                    </span>
-                                                                </td>
-                                                                <td>
-                                                                    1 200 $ за м²
-                                                                    <br>
-                                                                    <span class="small--grey">
-                                                                        1 200 $ за м²
-                                                                    </span>
-                                                                </td>
-                                                                <td>
-                                                                    <a href="#">
-                                                                        Святослав Райский
-                                                                    </a>
-                                
-                                                                    <div class="small--grey">
-                                                                        АН “Вариант”
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
+                  
                             </tbody>
                         </table>
                     </div>

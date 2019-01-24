@@ -1,5 +1,5 @@
 body::-webkit-scrollbar {
-    width: 1em;
+    width: 10px;
 }
  
 body::-webkit-scrollbar-track {
@@ -11,7 +11,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   border-radius: 5px;	
   background: none; 
- -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+ -webkit-box-shadow: inset 0 0 16px #2D9CDB;
   cursor: pointer;
 }
 /* ============  отступы margin  ============ */
@@ -133,4 +133,18 @@ body::-webkit-scrollbar-thumb {
 .flex-end{
     display: flex;
     justify-content: flex-end;
+}
+.ulCastom--heighTab{
+    margin: 10px 0 0 0;
+    li{
+        .nav-link{
+            padding: 1px 1rem;
+        }
+    }
+}
+.castomBredc{
+    padding: 2px 0 0 0;
+    a{
+        color: #4F4F4F;
+    }
 }

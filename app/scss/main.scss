@@ -47,12 +47,14 @@
 @import 'pages/home/first_section'      ;
 @import 'pages/add_objact/add_objact'   ;
 @import 'pages/listObjact/listObjact'   ;
+@import 'pages/obj/obj'                 ;
 
 @import 'details/details'   ;
 
 
-body{
+html > body{
     background: #fff;
+    padding: 10px 0 0 0 ;
 }
 img{
     max-width: 100%;
@@ -60,7 +62,9 @@ img{
     display: block;
 }
 
+//@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
 *{
+    font-family:  sans-serif;
     font-size: 12px;
 }
 #root{

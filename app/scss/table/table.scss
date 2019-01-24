@@ -266,7 +266,62 @@
     }
    
 }
+.tableObject--reqvest{
+    @extend .tableObject--reqvest;
+    thead{
+        tr{
+            th{
+                padding-left:  0;
+                padding-right: 0;
+                font-size: 12px;
+                font-weight: 400;
+                border-bottom: none;
+                &:nth-child(1){ // чекбокс
+                    width: 20px;
+                }
+                &:nth-child(2){ // номер
+                    width: 22px;
+                }
+                &:nth-child(3){ // меню
+                    width: 23px;
+                    a{
+                        display: block;
+                        text-align: center;
+                        margin: 0 0 3px 0;
+                        i{
+                            margin: 0 auto;
+                        }
+                    }
+                }
+                &:nth-child(4){ // п
+                    width: 55px;
+                }
+                &:nth-child(5){ // описание
+                    width: 160px;
+                }
+                &:nth-child(6){ // площадь
+                    width: 86px;
+                }
+                &:nth-child(7){ // этаж
+                    width: 53px;
+                }
+                &:nth-child(8){ // комнат
+                    width: 50px;
+                }
+                &:nth-child(9){ //цена 
+                    width: 87px;
+                }
+                &:nth-child(10){ // за м2
+                    width: 87px;
+                }
+                &:nth-child(11){ // Ответственный
+                    width: 143px;
+                }
+            }
 
+        }
+    }
+}
 .table-stap{
     table-layout: fixed;
     padding: 0;
@@ -479,4 +534,46 @@
 .tableDoc tr td{
     padding: 0 10px;
     font-size: 1.2em;
+}
+.tableListObj{
+    thead{
+        tr{
+            th{
+                &:nth-child(5){
+                    width: 215px;
+                }
+
+                &:nth-child(6){
+                    width: 105px;                    
+                }
+
+                &:nth-child(7){
+                    width: 60px;
+                }
+
+                &:nth-child(9){
+                    width: 115px;
+                }
+
+                &:nth-child(10){
+                    width: 110px;
+                }
+
+                &:nth-child(11){
+                    width: 130px;
+                }
+
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+                &:nth-child(5){
+                    text-align: justify;
+                }
+
+            }
+        }
+    }
 }

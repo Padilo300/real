@@ -46,7 +46,9 @@ html body {
     text-transform: uppercase;
 }
 .titleAppart{
-    color: $colorGray;
+    color: #000;
+    font-size: 18px;
+    margin: 0;
     @media screen and (max-width: 767px){
         text-align: center;
     }
@@ -84,16 +86,7 @@ html body {
 .pagination *{
     font-size: 1.5rem;
 }
-.price--red{
-    color: $colorRed;
-    line-height: 25px;
-    font-size: 24px;
-    .priceM2{
-        color: $colorGray;
-        margin: 5px 0 10px 0;
-    }
-    margin: 0;
-}   
+   
 
 
 .sliderLabel{

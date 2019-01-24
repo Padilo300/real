@@ -30,14 +30,14 @@
             margin: 0 0 0 15px;
             @media screen  and (max-width: 855px){
                 margin: 10px 0 0 0;
-                justify-content: space-around;
+                justify-content: space-evenly;
             }
             .number{
                 color: rgb(45, 156, 219);
             }
             //max-width: 300px;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             flex-wrap: wrap;
             *{
                 white-space: nowrap;
@@ -110,6 +110,17 @@
         color: #5CB85C;
     }
 }
+.wrapAppartament--pageObj{
+    @extend .wrapAppartament;
+    .titleAppart{
+        font-size: 14px;
+    }
+    .appartPrice{
+      b{
+          font-size: 15px;
+      }  
+    } 
+}
 .wrapTabs{
     @media screen and (min-width: 767px){
         margin: -35px 0 0 0;
@@ -152,7 +163,6 @@
 }
 .wrapTableObject{
     margin: 10px 0;
-    overflow: auto;
     @media screen and (max-width: 1210px){
         margin: 15px auto;
     }
@@ -160,6 +170,9 @@
     box-shadow: 0 4px 23px #E4E6E9;    
     transition: all 0.3s;
     padding: 0 5px;
+    .tableInner{
+        overflow: auto;
+    }
     &:hover{
         box-shadow: 0 0  10px #E4E6E9;
     }
@@ -206,5 +219,29 @@ html body .wrapTable--stap{
         display: flex;
         flex-direction: column;
         justify-content: center;   
+    }
+}
+.priceWrap{
+    display: flex;
+    .priceWrap--mainP{
+        display: flex;
+        flex-direction: column;
+        .firstTitle{
+            font-size: 24px;
+            height: 30px;
+        }
+        .lastTitle{
+            color: #6E777E;
+        }
+        margin: 0 10px 5px 0;
+    }
+    .priceWrap--last{
+        @extend .priceWrap--mainP;
+        .firstTitle{
+            color: #6E777E;
+            font-size: 18px;
+            position: relative;
+            top: 5px;
+        }
     }
 }
